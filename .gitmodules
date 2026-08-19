@@ -1,0 +1,5 @@
+[submodule "code/compression-comparisons-tools"]
+	path = code/compression-comparisons-tools
+	url = /home/yoh/proj/dandi/compression-comparisons
+	datalad-id = bbc7a988-bcab-4cfc-a9d4-d397d044d6cf
+	datalad-url = /home/yoh/proj/dandi/compression-comparisons
