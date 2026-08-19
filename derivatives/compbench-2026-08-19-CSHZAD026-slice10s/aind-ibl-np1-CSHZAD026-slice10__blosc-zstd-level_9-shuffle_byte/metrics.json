@@ -1,0 +1,12 @@
+{
+  "cr": 2.3239008176076155,
+  "decode_time_s": 0.07501796301221475,
+  "decode_xrt": 133.3014067360341,
+  "encode_time_s": 16.417748498963192,
+  "encode_xrt": 0.6090969173167391,
+  "encoded_bytes": 99143646,
+  "expected_lossless": true,
+  "original_bytes": 230400000,
+  "rmse": 0.0,
+  "round_trip_ok": true
+}
