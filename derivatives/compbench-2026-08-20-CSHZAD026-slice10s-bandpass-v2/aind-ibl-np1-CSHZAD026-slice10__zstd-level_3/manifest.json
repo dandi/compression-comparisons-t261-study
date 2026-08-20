@@ -1,0 +1,57 @@
+{
+  "codec": {
+    "lossy": false,
+    "name": "zstd",
+    "params": {
+      "level": 3
+    }
+  },
+  "compbench_version": "0.0.1.dev0",
+  "created_utc": "2026-08-20T04:29:22+00:00",
+  "git_sha": "2239082bdd29f5f46264e1ff542b186d943a4a0f",
+  "input": {
+    "dtype": "int16",
+    "duration_s": 10.0,
+    "n_channels": 384,
+    "nbytes": 230400000,
+    "provenance": {
+      "loader": "aind-benchmark",
+      "params": {
+        "channel_indices": null,
+        "duration_s": 10.0,
+        "path": "results/scratch-real-ephys-CSHZAD026-partial",
+        "start_s": 0.0
+      },
+      "preprocessing": [
+        {
+          "high_hz": 6000,
+          "kind": "bandpass",
+          "low_hz": 300,
+          "order": 4
+        }
+      ],
+      "spikeinterface": {
+        "dtype_native": "int16",
+        "folder_name": "scratch-real-ephys-CSHZAD026-partial",
+        "n_channels_total": 384,
+        "sampling_frequency_hz": 30000.0
+      },
+      "yaml_source": "configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp.yaml"
+    },
+    "sample_rate_hz": 30000.0,
+    "sha256": "e790b969db6b94addbea61ee577103f1e623d29ef65723aeac095331f1a0c2c5",
+    "shape": [
+      300000,
+      384
+    ]
+  },
+  "platform": {
+    "machine": "x86_64",
+    "release": "7.1.3+deb14-amd64",
+    "system": "Linux"
+  },
+  "python": {
+    "impl": "CPython",
+    "version": "3.11.2"
+  }
+}

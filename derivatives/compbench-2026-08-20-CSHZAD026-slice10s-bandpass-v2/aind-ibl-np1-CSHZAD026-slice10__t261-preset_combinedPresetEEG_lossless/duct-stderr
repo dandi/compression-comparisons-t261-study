@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "/home/yoh/proj/dandi/compression-comparisons/.venv/bin/compbench", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/yoh/proj/dandi/compression-comparisons/.venv/lib/python3.11/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yoh/proj/dandi/compression-comparisons/.venv/lib/python3.11/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/yoh/proj/dandi/compression-comparisons/.venv/lib/python3.11/site-packages/click/core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yoh/proj/dandi/compression-comparisons/.venv/lib/python3.11/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yoh/proj/dandi/compression-comparisons/.venv/lib/python3.11/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yoh/proj/dandi/compression-comparisons/src/compbench/cli.py", line 98, in run
+    result = run_cell(
+             ^^^^^^^^^
+  File "/home/yoh/proj/dandi/compression-comparisons/src/compbench/runner.py", line 84, in run_cell
+    encoded, enc_dt = encode(ds, adapter)
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/home/yoh/proj/dandi/compression-comparisons/src/compbench/runner.py", line 37, in encode
+    encoded = codec.encode(dataset.data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yoh/proj/dandi/compression-comparisons/src/compbench/codecs/t261.py", line 273, in encode
+    self._run_bwc(cmd, scratch, phase="encode")
+  File "/home/yoh/proj/dandi/compression-comparisons/src/compbench/codecs/t261.py", line 231, in _run_bwc
+    proc.wait(timeout=1800)
+  File "/usr/lib/python3.11/subprocess.py", line 1262, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 1989, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/home/yoh/proj/dandi/compression-comparisons/src/bwc/bin/release/EncoderApp', '-c', '/home/yoh/proj/dandi/compression-comparisons/src/bwc/cfg/combinedPresetEEG_lossless.cfg', '--InputFile=/tmp/t261-enc-gq3yxmej/input.raw', '--InputBitDepth=16', '--InputNumChannels=384', '--BitstreamFile=/tmp/t261-enc-gq3yxmej/output.bwc', '--FileFormat=RawH2']' timed out after 1800 seconds
