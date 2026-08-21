@@ -1,0 +1,41 @@
+{
+  "codec": {
+    "name": "bittrunc",
+    "lossy": false,
+    "params": {
+      "bits": 0
+    },
+    "base_codec": {
+      "cname": "zstd",
+      "clevel": 9,
+      "shuffle": "bitshuffle"
+    },
+    "rounding": "half-to-even (numcodecs FixedScaleOffset), NOT a right shift"
+  },
+  "cr": 3.3474391030711996,
+  "encode_s": 48.5111180357635,
+  "encode_xrt": 0.6184149369198895,
+  "rmse_uv": 0.0,
+  "rmse_window_s": [
+    15.0,
+    20.0
+  ],
+  "round_trip_exact": true,
+  "expected_lossless": true,
+  "lossless_violation": false,
+  "chunk_duration_s": 1.0,
+  "duration_s": 30.0,
+  "n_channels": 384,
+  "sampling_frequency_hz": 32000.0,
+  "zarr_path": "derivatives/sorting-loop-2026-08-21/bittrunc-bits0/compressed.zarr",
+  "versions": {
+    "python": "3.13.15",
+    "numcodecs": "0.15.1",
+    "spikeinterface": "0.104.8",
+    "compbench_git_sha": "ab695bcb2f43d01d16fd15bdab1312aba5f8e9fc",
+    "platform": "Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.41",
+    "libc": "glibc-2.41",
+    "torch": "2.13.0+cu130",
+    "cuda_device": "NVIDIA A100-PCIE-40GB"
+  }
+}
