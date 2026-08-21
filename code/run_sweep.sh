@@ -72,13 +72,42 @@ mkdir -p "$TMPDIR"
 
 OUT="derivatives/compbench-$(date -I)-${PROFILE_NAME}"
 echo "=== [$(date -Is)] $PROFILE_NAME ==="
-echo "    tool commit : $ACTUAL (pinned, frozen install)"
+echo "    tool commit : $ACTUAL (pinned)"
 echo "    codecs      : $(compbench list-codecs | tr '\n' ' ')"
 echo "    results_dir : $OUT"
 echo "    TMPDIR      : $TMPDIR"
 cd "$STUDY"
-snakemake -s "$TOOL/src/compbench/pipeline/Snakefile" \
-    --configfile "$TOOL/configs/profiles/${PROFILE_NAME}.yaml" \
-    --config results_dir="$OUT" \
-    --nocolor "$@"
+
+# ---------------------------------------------------------------------------
+# Provenance: ONE `datalad run` wrapping the whole sweep.
+#
+# Not one per cell. Measured: eight concurrent `datalad run` invocations in a
+# single dataset produce five failures out of eight (git index.lock
+# contention, exit 128), three run records, and five outputs left untracked.
+# `datalad run` is not concurrency-safe within a dataset, and a sweep is
+# hundreds of cells wide.
+#
+# One record wrapping a parallel snakemake gives a clean commit with the
+# command, inputs and outputs — verified. Per-cell provenance is not lost: it
+# lives in each cell's manifest.json (tool SHA, BWC SHA, codec params and
+# filters, input sha256, git-annex key of the source recording).
+#
+# `--explicit` so an unrelated dirty file elsewhere in the study does not
+# block a sweep, and so only the declared outputs are saved.
+# ---------------------------------------------------------------------------
+CMD="snakemake -s code/compression-comparisons-tools/src/compbench/pipeline/Snakefile \
+    --configfile code/compression-comparisons-tools/configs/profiles/${PROFILE_NAME}.yaml \
+    --config results_dir=$OUT --nocolor $*"
+
+if [ "${COMPBENCH_NO_DATALAD:-0}" = "1" ]; then
+    echo "    provenance  : DISABLED (COMPBENCH_NO_DATALAD=1)"
+    eval "$CMD"
+else
+    echo "    provenance  : datalad run --explicit"
+    datalad run --explicit \
+        --input sourcedata/aind-ephys-compression \
+        --output "$OUT" \
+        -m "sweep: ${PROFILE_NAME} (tool ${ACTUAL:0:8}, $*)" \
+        "$CMD"
+fi
 echo "=== [$(date -Is)] done (rc=$?) ==="
