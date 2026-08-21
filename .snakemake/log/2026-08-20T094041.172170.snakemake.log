@@ -1,0 +1,296 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-08-20 09:40:41
+  Workflow ID: 5ef7c055-5d03-4148-b845-cbb0865d91a2
+  Platform: Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.36
+  Host: 7c8e5c34d66f
+  User: node
+  Snakemake version: 9.25.2
+  Python version: 3.11.2 (main, Apr 28 2025, 14:11:48) [GCC 12.2.0]
+  Command: /data/yoh/compression-comparisons/.venv/bin/snakemake -s /data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile --configfile /data/yoh/compression-comparisons/configs/profiles/paper-real.yaml --config results_dir=derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify --cores 21 --keep-going
+  Snakefile: /data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile
+  Base directory: /data/yoh/compression-comparisons/src/compbench/pipeline
+  Run directory: /data/yoh/compression-comparisons/results/dandi-t261-compression-study
+  Working directory: /data/yoh/compression-comparisons/results/dandi-t261-compression-study
+  Config file(s): [PosixPath('/data/yoh/compression-comparisons/configs/profiles/paper-real.yaml')]
+  Config MD5: 11ac31f7bf478cfa2675d14ca9718463
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 21
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+run_cell       21
+all             1
+total          22
+
+Select jobs to execute...
+Execute 21 jobs...
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct-info.json
+    jobid: 16
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/duct-info.json
+    jobid: 8
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/duct-info.json
+    jobid: 2
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/duct-info.json
+    jobid: 17
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/duct-info.json
+    jobid: 9
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__gzip-level_5
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/duct-info.json
+    jobid: 5
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/duct-info.json
+    jobid: 18
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-178c1436
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/duct-info.json
+    jobid: 10
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__zlib-level_5
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/duct-info.json
+    jobid: 3
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/duct-info.json
+    jobid: 19
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/duct-info.json
+    jobid: 12
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__zstd-level_3
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/duct-info.json
+    jobid: 4
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/duct-info.json
+    jobid: 20
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/duct-info.json
+    jobid: 13
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__zstd-level_22
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/duct-info.json
+    jobid: 11
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/duct-info.json
+    jobid: 21
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/duct-info.json
+    jobid: 14
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/duct-info.json
+    jobid: 6
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct-info.json
+    jobid: 15
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/duct-info.json
+    jobid: 7
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:40:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/duct-info.json
+    jobid: 1
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:42:03 2026]
+Finished jobid: 1 (Rule: run_cell)
+1 of 22 steps (5%) done
+[Thu Aug 20 09:42:08 2026]
+Finished jobid: 11 (Rule: run_cell)
+2 of 22 steps (9%) done
+[Thu Aug 20 09:42:14 2026]
+Finished jobid: 3 (Rule: run_cell)
+3 of 22 steps (14%) done
+[Thu Aug 20 09:42:14 2026]
+Finished jobid: 12 (Rule: run_cell)
+4 of 22 steps (18%) done
+[Thu Aug 20 09:42:15 2026]
+Finished jobid: 2 (Rule: run_cell)
+5 of 22 steps (23%) done
+[Thu Aug 20 09:42:17 2026]
+Finished jobid: 10 (Rule: run_cell)
+6 of 22 steps (27%) done
+[Thu Aug 20 09:42:18 2026]
+Finished jobid: 9 (Rule: run_cell)
+7 of 22 steps (32%) done
+[Thu Aug 20 09:42:20 2026]
+Finished jobid: 4 (Rule: run_cell)
+8 of 22 steps (36%) done
+[Thu Aug 20 09:42:24 2026]
+Finished jobid: 7 (Rule: run_cell)
+9 of 22 steps (41%) done
+[Thu Aug 20 09:42:24 2026]
+Finished jobid: 5 (Rule: run_cell)
+10 of 22 steps (45%) done
+[Thu Aug 20 09:42:25 2026]
+Finished jobid: 8 (Rule: run_cell)
+11 of 22 steps (50%) done
+[Thu Aug 20 09:42:52 2026]
+Finished jobid: 6 (Rule: run_cell)
+12 of 22 steps (55%) done
+[Thu Aug 20 09:44:55 2026]
+Finished jobid: 15 (Rule: run_cell)
+13 of 22 steps (59%) done
+[Thu Aug 20 09:45:48 2026]
+Finished jobid: 14 (Rule: run_cell)
+14 of 22 steps (64%) done
+[Thu Aug 20 09:47:06 2026]
+Finished jobid: 13 (Rule: run_cell)
+15 of 22 steps (68%) done
+[Thu Aug 20 09:48:10 2026]
+Finished jobid: 21 (Rule: run_cell)
+16 of 22 steps (73%) done
+[Thu Aug 20 09:48:23 2026]
+Finished jobid: 20 (Rule: run_cell)
+17 of 22 steps (77%) done
+[Thu Aug 20 09:48:24 2026]
+Finished jobid: 19 (Rule: run_cell)
+18 of 22 steps (82%) done
+[Thu Aug 20 09:49:11 2026]
+Finished jobid: 18 (Rule: run_cell)
+19 of 22 steps (86%) done
+[Thu Aug 20 09:49:29 2026]
+Finished jobid: 17 (Rule: run_cell)
+20 of 22 steps (91%) done
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_lossless \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless' returned non-zero exit status 1.
+[Thu Aug 20 10:12:10 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 16
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_lossless \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct-info.json
+Exiting because a job execution failed. Look below for error messages
+[Thu Aug 20 10:12:10 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 16
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_lossless \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless
+        
+        (command exited with non-zero exit code)
+Complete log(s): /data/yoh/compression-comparisons/results/dandi-t261-compression-study/.snakemake/log/2026-08-20T094041.172170.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

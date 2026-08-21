@@ -1,0 +1,2455 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: 327bc5911745
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 21
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+run_cell     1392
+total        1393
+
+Select jobs to execute...
+Execute 21 jobs...
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306/duct-info.json
+    jobid: 1101
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306/metrics.json
+    wildcards: cell_id=aind-634569-lsb__t261-2ab16306
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__lz4-acceleration_1/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__lz4-acceleration_1/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__lz4-acceleration_1/duct-info.json
+    jobid: 261
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__lz4-acceleration_1/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-raw__lz4-acceleration_1
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_byte/duct-info.json
+    jobid: 821
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-634568-lsb__blosc-lz4hc-level_9-shuffle_byte
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__zstd-level_22/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__zstd-level_22/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__zstd-level_22/duct-info.json
+    jobid: 205
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__zstd-level_22/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__zstd-level_22
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__gzip-level_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__gzip-level_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__gzip-level_9-chunk1s/duct-info.json
+    jobid: 1070
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__gzip-level_9-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-lsb__gzip-level_9-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3/duct-info.json
+    jobid: 174
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-raw__t261-26ca7af3
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_3.0-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_3.0-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_3.0-chunk1s/duct-info.json
+    jobid: 454
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_3.0-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-bp__wavpack-level_2-bps_3.0-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-chunk1s/duct-info.json
+    jobid: 734
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-raw__wavpack-level_2-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zlib-level_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zlib-level_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zlib-level_9-chunk1s/duct-info.json
+    jobid: 1014
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zlib-level_9-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-bp__zlib-level_9-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda/duct-info.json
+    jobid: 56
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda/metrics.json
+    wildcards: cell_id=ibl-CSHZAD026-raw__t261-68e11cda
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__flac-level_5-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__flac-level_5-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__flac-level_5-chunk1s/duct-info.json
+    jobid: 616
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__flac-level_5-chunk1s/metrics.json
+    wildcards: cell_id=aind-625749-lsb__flac-level_5-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__gzip-level_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__gzip-level_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__gzip-level_9-chunk1s/duct-info.json
+    jobid: 896
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__gzip-level_9-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-lsbbp__gzip-level_9-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_none/duct-info.json
+    jobid: 193
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zlib-level_9-shuffle_bit/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zlib-level_9-shuffle_bit/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zlib-level_9-shuffle_bit/duct-info.json
+    jobid: 249
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zlib-level_9-shuffle_bit/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-raw__blosc-zlib-level_9-shuffle_bit
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_none/duct-info.json
+    jobid: 361
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4-level_9-shuffle_bit/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4-level_9-shuffle_bit/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4-level_9-shuffle_bit/duct-info.json
+    jobid: 585
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4-level_9-shuffle_bit/metrics.json
+    wildcards: cell_id=aind-625749-lsb__blosc-lz4-level_9-shuffle_bit
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-preset_combinedPresetEEG_IndepChannel_lossless/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct-info.json
+    jobid: 865
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json
+    wildcards: cell_id=aind-634568-lsb__t261-preset_combinedPresetEEG_IndepChannel_lossless
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_none-chunk1s/duct-info.json
+    jobid: 1058
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_none-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-lsb__blosc-zlib-level_9-shuffle_none-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__blosc-zstd-level_9-shuffle_bit-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__blosc-zstd-level_9-shuffle_bit-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__blosc-zstd-level_9-shuffle_bit-chunk1s/duct-info.json
+    jobid: 778
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__blosc-zstd-level_9-shuffle_bit-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-bp__blosc-zstd-level_9-shuffle_bit-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_byte-chunk1s/duct-info.json
+    jobid: 1338
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=aind-634571-lsbbp__blosc-lz4-level_9-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+[Thu Aug 20 14:41:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_byte/duct-info.json
+    jobid: 131
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_byte
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:44:26 2026]
+Finished jobid: 261 (Rule: run_cell)
+1 of 1393 steps (0.1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:44:27 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4-level_9-shuffle_bit/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4-level_9-shuffle_bit/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4-level_9-shuffle_bit/duct-info.json
+    jobid: 411
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4-level_9-shuffle_bit/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-bp__blosc-lz4-level_9-shuffle_bit
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:45:07 2026]
+Finished jobid: 734 (Rule: run_cell)
+2 of 1393 steps (0.1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:45:07 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_byte/duct-info.json
+    jobid: 467
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-625749-raw__blosc-lz4-level_9-shuffle_byte
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:45:08 2026]
+Finished jobid: 249 (Rule: run_cell)
+3 of 1393 steps (0.2%) done
+Execute 1 jobs...
+[Thu Aug 20 14:45:08 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_2.25/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_2.25/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_2.25/duct-info.json
+    jobid: 747
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_2.25/metrics.json
+    wildcards: cell_id=aind-634568-raw__wavpack-level_2-bps_2.25
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:47:12 2026]
+Finished jobid: 361 (Rule: run_cell)
+4 of 1393 steps (0.3%) done
+Execute 1 jobs...
+[Thu Aug 20 14:47:12 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.5/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.5/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.5/duct-info.json
+    jobid: 915
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.5/metrics.json
+    wildcards: cell_id=aind-634568-lsbbp__wavpack-level_2-bps_3.5
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:47:30 2026]
+Finished jobid: 467 (Rule: run_cell)
+5 of 1393 steps (0.4%) done
+Execute 1 jobs...
+[Thu Aug 20 14:47:30 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__lzma-preset_9/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__lzma-preset_9/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__lzma-preset_9/duct-info.json
+    jobid: 1251
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__lzma-preset_9/metrics.json
+    wildcards: cell_id=aind-634571-bp__lzma-preset_9
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:48:51 2026]
+Finished jobid: 585 (Rule: run_cell)
+6 of 1393 steps (0.4%) done
+Execute 1 jobs...
+[Thu Aug 20 14:48:51 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_5.0-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_5.0-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_5.0-chunk1s/duct-info.json
+    jobid: 100
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_5.0-chunk1s/metrics.json
+    wildcards: cell_id=ibl-CSHZAD026-bp__wavpack-level_2-bps_5.0-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:50:42 2026]
+Finished jobid: 411 (Rule: run_cell)
+7 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:50:42 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__zstd-level_22-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__zstd-level_22-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__zstd-level_22-chunk1s/duct-info.json
+    jobid: 380
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__zstd-level_22-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-raw__zstd-level_22-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:50:53 2026]
+Finished jobid: 616 (Rule: run_cell)
+8 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:50:53 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-lz4hc-level_9-shuffle_bit-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-lz4hc-level_9-shuffle_bit-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-lz4hc-level_9-shuffle_bit-chunk1s/duct-info.json
+    jobid: 940
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-lz4hc-level_9-shuffle_bit-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-raw__blosc-lz4hc-level_9-shuffle_bit-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:52:02 2026]
+Finished jobid: 821 (Rule: run_cell)
+9 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:52:02 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_none/duct-info.json
+    jobid: 13
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:52:06 2026]
+Finished jobid: 1338 (Rule: run_cell)
+10 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:52:06 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_byte/duct-info.json
+    jobid: 293
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_byte
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:52:12 2026]
+Finished jobid: 1014 (Rule: run_cell)
+11 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:52:12 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct-info.json
+    jobid: 517
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json
+    wildcards: cell_id=aind-625749-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:52:13 2026]
+Finished jobid: 940 (Rule: run_cell)
+12 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:52:13 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3/duct-info.json
+    jobid: 1102
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3/metrics.json
+    wildcards: cell_id=aind-634569-lsb__t261-26ca7af3
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:53:03 2026]
+Finished jobid: 1070 (Rule: run_cell)
+13 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:53:03 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__lz4-acceleration_1-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__lz4-acceleration_1-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__lz4-acceleration_1-chunk1s/duct-info.json
+    jobid: 262
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__lz4-acceleration_1-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-raw__lz4-acceleration_1-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:53:32 2026]
+Finished jobid: 262 (Rule: run_cell)
+14 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:53:32 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_byte-chunk1s/duct-info.json
+    jobid: 822
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-lsb__blosc-lz4hc-level_9-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:53:50 2026]
+Finished jobid: 747 (Rule: run_cell)
+15 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:53:50 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__zstd-level_22-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__zstd-level_22-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__zstd-level_22-chunk1s/duct-info.json
+    jobid: 206
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__zstd-level_22-chunk1s/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__zstd-level_22-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:53:55 2026]
+Finished jobid: 100 (Rule: run_cell)
+16 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:53:55 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_none/duct-info.json
+    jobid: 175
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:55:03 2026]
+Finished jobid: 293 (Rule: run_cell)
+17 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:55:03 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.5/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.5/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.5/duct-info.json
+    jobid: 455
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.5/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.5
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:55:18 2026]
+Finished jobid: 1058 (Rule: run_cell)
+18 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:55:18 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_6.0/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_6.0/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_6.0/duct-info.json
+    jobid: 735
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_6.0/metrics.json
+    wildcards: cell_id=aind-634568-raw__wavpack-level_2-bps_6.0
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:56:21 2026]
+Finished jobid: 778 (Rule: run_cell)
+19 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:56:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__lz4-acceleration_1/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__lz4-acceleration_1/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__lz4-acceleration_1/duct-info.json
+    jobid: 1015
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__lz4-acceleration_1/metrics.json
+    wildcards: cell_id=aind-634569-bp__lz4-acceleration_1
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:56:29 2026]
+Finished jobid: 454 (Rule: run_cell)
+20 of 1393 steps (1%) done
+Execute 1 jobs...
+[Thu Aug 20 14:56:29 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__zlib-level_9/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__zlib-level_9/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__zlib-level_9/duct-info.json
+    jobid: 1071
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__zlib-level_9/metrics.json
+    wildcards: cell_id=aind-634569-lsb__zlib-level_9
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:56:55 2026]
+Finished jobid: 13 (Rule: run_cell)
+21 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 14:56:55 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306/duct-info.json
+    jobid: 57
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306/metrics.json
+    wildcards: cell_id=ibl-CSHZAD026-raw__t261-2ab16306
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:57:32 2026]
+Finished jobid: 175 (Rule: run_cell)
+22 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 14:57:32 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2/duct-info.json
+    jobid: 617
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2/metrics.json
+    wildcards: cell_id=aind-625749-lsb__wavpack-level_2
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:58:31 2026]
+Finished jobid: 915 (Rule: run_cell)
+23 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 14:58:31 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__zlib-level_9/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__zlib-level_9/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__zlib-level_9/duct-info.json
+    jobid: 897
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__zlib-level_9/metrics.json
+    wildcards: cell_id=aind-634568-lsbbp__zlib-level_9
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 14:58:54 2026]
+Finished jobid: 1015 (Rule: run_cell)
+24 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 14:58:54 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zlib-level_9-shuffle_bit-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zlib-level_9-shuffle_bit-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zlib-level_9-shuffle_bit-chunk1s/duct-info.json
+    jobid: 250
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zlib-level_9-shuffle_bit-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-raw__blosc-zlib-level_9-shuffle_bit-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:00:16 2026]
+Finished jobid: 617 (Rule: run_cell)
+25 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 15:00:16 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_none-chunk1s/duct-info.json
+    jobid: 362
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_none-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_none-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:00:36 2026]
+Finished jobid: 735 (Rule: run_cell)
+26 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 15:00:36 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4-level_9-shuffle_bit-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4-level_9-shuffle_bit-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4-level_9-shuffle_bit-chunk1s/duct-info.json
+    jobid: 586
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4-level_9-shuffle_bit-chunk1s/metrics.json
+    wildcards: cell_id=aind-625749-lsb__blosc-lz4-level_9-shuffle_bit-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:01:09 2026]
+Finished jobid: 896 (Rule: run_cell)
+27 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 15:01:09 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_none-chunk1s/duct-info.json
+    jobid: 194
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_none-chunk1s/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_none-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:01:10 2026]
+Finished jobid: 822 (Rule: run_cell)
+28 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 15:01:10 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60/duct-info.json
+    jobid: 866
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60/metrics.json
+    wildcards: cell_id=aind-634568-lsb__t261-fbf3bd60
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:01:14 2026]
+Finished jobid: 193 (Rule: run_cell)
+29 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 15:01:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__gzip-level_9/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__gzip-level_9/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__gzip-level_9/duct-info.json
+    jobid: 779
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__gzip-level_9/metrics.json
+    wildcards: cell_id=aind-634568-bp__gzip-level_9
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:01:24 2026]
+Finished jobid: 455 (Rule: run_cell)
+30 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 15:01:24 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte/duct-info.json
+    jobid: 1059
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=aind-634569-lsb__blosc-zlib-level_9-shuffle_byte
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:01:26 2026]
+Finished jobid: 586 (Rule: run_cell)
+31 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 15:01:26 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_bit/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_bit/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_bit/duct-info.json
+    jobid: 1339
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_bit/metrics.json
+    wildcards: cell_id=aind-634571-lsbbp__blosc-lz4-level_9-shuffle_bit
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:01:57 2026]
+Finished jobid: 250 (Rule: run_cell)
+32 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 15:01:57 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4-level_9-shuffle_bit-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4-level_9-shuffle_bit-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4-level_9-shuffle_bit-chunk1s/duct-info.json
+    jobid: 412
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4-level_9-shuffle_bit-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-bp__blosc-lz4-level_9-shuffle_bit-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:03:35 2026]
+Finished jobid: 865 (Rule: run_cell)
+33 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 15:03:35 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_byte-chunk1s/duct-info.json
+    jobid: 468
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=aind-625749-raw__blosc-lz4-level_9-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:03:53 2026]
+Finished jobid: 468 (Rule: run_cell)
+34 of 1393 steps (2%) done
+Execute 1 jobs...
+[Thu Aug 20 15:03:53 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_2.25-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_2.25-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_2.25-chunk1s/duct-info.json
+    jobid: 748
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_2.25-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-raw__wavpack-level_2-bps_2.25-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:04:08 2026]
+Finished jobid: 412 (Rule: run_cell)
+35 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:04:08 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.5-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.5-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.5-chunk1s/duct-info.json
+    jobid: 916
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.5-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-lsbbp__wavpack-level_2-bps_3.5-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:04:22 2026]
+Finished jobid: 1339 (Rule: run_cell)
+36 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:04:22 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__lzma-preset_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__lzma-preset_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__lzma-preset_9-chunk1s/duct-info.json
+    jobid: 1252
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__lzma-preset_9-chunk1s/metrics.json
+    wildcards: cell_id=aind-634571-bp__lzma-preset_9-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:04:52 2026]
+Finished jobid: 362 (Rule: run_cell)
+37 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:04:52 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/duct-info.json
+    jobid: 132
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:05:09 2026]
+Finished jobid: 779 (Rule: run_cell)
+38 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:05:09 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-zlib-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-zlib-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-zlib-level_9-shuffle_none/duct-info.json
+    jobid: 941
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-zlib-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=aind-634569-raw__blosc-zlib-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:06:37 2026]
+Finished jobid: 1071 (Rule: run_cell)
+39 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:06:37 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9/duct-info.json
+    jobid: 381
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-raw__lzma-preset_9
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:06:59 2026]
+Finished jobid: 941 (Rule: run_cell)
+40 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:06:59 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_4.0/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_4.0/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_4.0/duct-info.json
+    jobid: 101
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_4.0/metrics.json
+    wildcards: cell_id=ibl-CSHZAD026-bp__wavpack-level_2-bps_4.0
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:07:13 2026]
+Finished jobid: 748 (Rule: run_cell)
+41 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:07:13 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60/duct-info.json
+    jobid: 518
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60/metrics.json
+    wildcards: cell_id=aind-625749-raw__t261-fbf3bd60
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:09:28 2026]
+Finished jobid: 916 (Rule: run_cell)
+42 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:09:28 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_byte-chunk1s/duct-info.json
+    jobid: 294
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:11:01 2026]
+Finished jobid: 897 (Rule: run_cell)
+43 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:11:01 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_none-chunk1s/duct-info.json
+    jobid: 14
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_none-chunk1s/metrics.json
+    wildcards: cell_id=ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_none-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:11:09 2026]
+Finished jobid: 294 (Rule: run_cell)
+44 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:11:09 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22/duct-info.json
+    jobid: 263
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-raw__zstd-level_22
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD026-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=3.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda' returned non-zero exit status 1.
+[Thu Aug 20 15:11:26 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 56
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD026-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=3.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-68e11cda/duct-info.json
+Execute 1 jobs...
+[Thu Aug 20 15:11:26 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_bit/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_bit/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_bit/duct-info.json
+    jobid: 823
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_bit/metrics.json
+    wildcards: cell_id=aind-634568-lsb__blosc-lz4hc-level_9-shuffle_bit
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD029-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=8.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3' returned non-zero exit status 1.
+[Thu Aug 20 15:11:30 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 174
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD029-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=8.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__t261-26ca7af3/duct-info.json
+Execute 1 jobs...
+[Thu Aug 20 15:11:30 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsbbp__blosc-lz4-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsbbp__blosc-lz4-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsbbp__blosc-lz4-level_9-shuffle_none/duct-info.json
+    jobid: 1103
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsbbp__blosc-lz4-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=aind-634569-lsbbp__blosc-lz4-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:11:46 2026]
+Finished jobid: 101 (Rule: run_cell)
+45 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:11:46 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9/duct-info.json
+    jobid: 207
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__lzma-preset_9
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:12:35 2026]
+Finished jobid: 823 (Rule: run_cell)
+46 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:12:35 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_none-chunk1s/duct-info.json
+    jobid: 176
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_none-chunk1s/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_none-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:14:10 2026]
+Finished jobid: 1103 (Rule: run_cell)
+47 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:14:10 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__zlib-level_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__zlib-level_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__zlib-level_9-chunk1s/duct-info.json
+    jobid: 1072
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__zlib-level_9-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-lsb__zlib-level_9-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:14:42 2026]
+Finished jobid: 176 (Rule: run_cell)
+48 of 1393 steps (3%) done
+Execute 1 jobs...
+[Thu Aug 20 15:14:42 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__lz4-acceleration_1-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__lz4-acceleration_1-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__lz4-acceleration_1-chunk1s/duct-info.json
+    jobid: 1016
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__lz4-acceleration_1-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-bp__lz4-acceleration_1-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:15:04 2026]
+Finished jobid: 517 (Rule: run_cell)
+49 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:15:04 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.5-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.5-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.5-chunk1s/duct-info.json
+    jobid: 456
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.5-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.5-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:15:07 2026]
+Finished jobid: 131 (Rule: run_cell)
+50 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:15:07 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_6.0-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_6.0-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_6.0-chunk1s/duct-info.json
+    jobid: 736
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_6.0-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-raw__wavpack-level_2-bps_6.0-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:15:07 2026]
+Finished jobid: 14 (Rule: run_cell)
+51 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:15:07 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2-chunk1s/duct-info.json
+    jobid: 618
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2-chunk1s/metrics.json
+    wildcards: cell_id=aind-625749-lsb__wavpack-level_2-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634569-lsb.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=5.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306' returned non-zero exit status 1.
+[Thu Aug 20 15:15:07 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 1101
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634569-lsb.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=5.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-2ab16306/duct-info.json
+Execute 1 jobs...
+[Thu Aug 20 15:15:08 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3/duct-info.json
+    jobid: 58
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3/metrics.json
+    wildcards: cell_id=ibl-CSHZAD026-raw__t261-26ca7af3
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:15:40 2026]
+Finished jobid: 194 (Rule: run_cell)
+52 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:15:40 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__zlib-level_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__zlib-level_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__zlib-level_9-chunk1s/duct-info.json
+    jobid: 898
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__zlib-level_9-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-lsbbp__zlib-level_9-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:17:09 2026]
+Finished jobid: 1016 (Rule: run_cell)
+53 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:17:09 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none/duct-info.json
+    jobid: 587
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:17:38 2026]
+Finished jobid: 618 (Rule: run_cell)
+54 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:17:38 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte/duct-info.json
+    jobid: 195
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:19:35 2026]
+Finished jobid: 736 (Rule: run_cell)
+55 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:19:35 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none/duct-info.json
+    jobid: 251
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:21:02 2026]
+Finished jobid: 456 (Rule: run_cell)
+56 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:21:02 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte/duct-info.json
+    jobid: 363
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:21:53 2026]
+Finished jobid: 587 (Rule: run_cell)
+57 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:21:53 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436/duct-info.json
+    jobid: 867
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436/metrics.json
+    wildcards: cell_id=aind-634568-lsb__t261-178c1436
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:22:11 2026]
+Finished jobid: 1251 (Rule: run_cell)
+58 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:22:11 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_bit-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_bit-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_bit-chunk1s/duct-info.json
+    jobid: 1340
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4-level_9-shuffle_bit-chunk1s/metrics.json
+    wildcards: cell_id=aind-634571-lsbbp__blosc-lz4-level_9-shuffle_bit-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:22:44 2026]
+Finished jobid: 380 (Rule: run_cell)
+59 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:22:44 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s/duct-info.json
+    jobid: 1060
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:23:01 2026]
+Finished jobid: 1072 (Rule: run_cell)
+60 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:23:01 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__gzip-level_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__gzip-level_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__gzip-level_9-chunk1s/duct-info.json
+    jobid: 780
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-bp__gzip-level_9-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-bp__gzip-level_9-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634569-lsb.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=8.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3' returned non-zero exit status 1.
+[Thu Aug 20 15:23:21 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 1102
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634569-lsb.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=8.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__t261-26ca7af3/duct-info.json
+Execute 1 jobs...
+[Thu Aug 20 15:23:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.0/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.0/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.0/duct-info.json
+    jobid: 917
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__wavpack-level_2-bps_3.0/metrics.json
+    wildcards: cell_id=aind-634568-lsbbp__wavpack-level_2-bps_3.0
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:24:41 2026]
+Finished jobid: 1340 (Rule: run_cell)
+61 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:24:41 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__flac-level_5/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__flac-level_5/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__flac-level_5/duct-info.json
+    jobid: 1253
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-bp__flac-level_5/metrics.json
+    wildcards: cell_id=aind-634571-bp__flac-level_5
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:25:01 2026]
+Finished jobid: 206 (Rule: run_cell)
+62 of 1393 steps (4%) done
+Execute 1 jobs...
+[Thu Aug 20 15:25:01 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct-info.json
+    jobid: 749
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json
+    wildcards: cell_id=aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:26:54 2026]
+Finished jobid: 780 (Rule: run_cell)
+63 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:26:54 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_bit/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_bit/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_bit/duct-info.json
+    jobid: 469
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__blosc-lz4-level_9-shuffle_bit/metrics.json
+    wildcards: cell_id=aind-625749-raw__blosc-lz4-level_9-shuffle_bit
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD026-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=5.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306' returned non-zero exit status 1.
+[Thu Aug 20 15:26:58 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 57
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD026-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=5.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-2ab16306/duct-info.json
+Execute 1 jobs...
+[Thu Aug 20 15:26:58 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_bit/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_bit/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_bit/duct-info.json
+    jobid: 133
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_bit/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-raw__blosc-zlib-level_9-shuffle_bit
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:27:00 2026]
+Finished jobid: 1253 (Rule: run_cell)
+64 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:27:00 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4hc-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4hc-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4hc-level_9-shuffle_none/duct-info.json
+    jobid: 413
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__blosc-lz4hc-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-bp__blosc-lz4hc-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:27:21 2026]
+Finished jobid: 469 (Rule: run_cell)
+65 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:27:21 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s/duct-info.json
+    jobid: 382
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:28:13 2026]
+Finished jobid: 1252 (Rule: run_cell)
+66 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:28:13 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-zlib-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-zlib-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-zlib-level_9-shuffle_none-chunk1s/duct-info.json
+    jobid: 942
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-raw__blosc-zlib-level_9-shuffle_none-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-raw__blosc-zlib-level_9-shuffle_none-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:28:27 2026]
+Finished jobid: 917 (Rule: run_cell)
+67 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:28:27 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_4.0-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_4.0-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_4.0-chunk1s/duct-info.json
+    jobid: 102
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__wavpack-level_2-bps_4.0-chunk1s/metrics.json
+    wildcards: cell_id=ibl-CSHZAD026-bp__wavpack-level_2-bps_4.0-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:28:53 2026]
+Finished jobid: 898 (Rule: run_cell)
+68 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:28:53 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_bit/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_bit/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_bit/duct-info.json
+    jobid: 295
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_bit/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-bp__blosc-lz4-level_9-shuffle_bit
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:28:59 2026]
+Finished jobid: 133 (Rule: run_cell)
+69 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:28:59 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436/duct-info.json
+    jobid: 519
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436/metrics.json
+    wildcards: cell_id=aind-625749-raw__t261-178c1436
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:29:48 2026]
+Finished jobid: 251 (Rule: run_cell)
+70 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:29:48 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte/duct-info.json
+    jobid: 15
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:30:20 2026]
+Finished jobid: 942 (Rule: run_cell)
+71 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:30:20 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s/duct-info.json
+    jobid: 208
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__lzma-preset_9-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:30:37 2026]
+Finished jobid: 295 (Rule: run_cell)
+72 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:30:37 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s/duct-info.json
+    jobid: 264
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-raw__zstd-level_22-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634568-lsb.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=1.5 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60' returned non-zero exit status 1.
+[Thu Aug 20 15:31:54 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 866
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634568-lsb.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=1.5 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-fbf3bd60/duct-info.json
+Execute 1 jobs...
+[Thu Aug 20 15:31:54 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_bit-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_bit-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_bit-chunk1s/duct-info.json
+    jobid: 824
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__blosc-lz4hc-level_9-shuffle_bit-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-lsb__blosc-lz4hc-level_9-shuffle_bit-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:32:43 2026]
+Finished jobid: 195 (Rule: run_cell)
+73 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:32:43 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsbbp__blosc-lz4-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsbbp__blosc-lz4-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsbbp__blosc-lz4-level_9-shuffle_none-chunk1s/duct-info.json
+    jobid: 1104
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsbbp__blosc-lz4-level_9-shuffle_none-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-lsbbp__blosc-lz4-level_9-shuffle_none-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:33:12 2026]
+Finished jobid: 824 (Rule: run_cell)
+74 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:33:12 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__lz4-acceleration_1/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__lz4-acceleration_1/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__lz4-acceleration_1/duct-info.json
+    jobid: 1073
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__lz4-acceleration_1/metrics.json
+    wildcards: cell_id=aind-634569-lsb__lz4-acceleration_1
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:34:00 2026]
+Finished jobid: 1073 (Rule: run_cell)
+75 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:34:00 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22/duct-info.json
+    jobid: 1017
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22/metrics.json
+    wildcards: cell_id=aind-634569-bp__zstd-level_22
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:34:07 2026]
+Finished jobid: 413 (Rule: run_cell)
+76 of 1393 steps (5%) done
+Execute 1 jobs...
+[Thu Aug 20 15:34:07 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.25/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.25/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.25/duct-info.json
+    jobid: 457
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.25/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-bp__wavpack-level_2-bps_2.25
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:34:15 2026]
+Finished jobid: 102 (Rule: run_cell)
+77 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:34:15 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_5.0/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_5.0/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_5.0/duct-info.json
+    jobid: 737
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__wavpack-level_2-bps_5.0/metrics.json
+    wildcards: cell_id=aind-634568-raw__wavpack-level_2-bps_5.0
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:35:24 2026]
+Finished jobid: 205 (Rule: run_cell)
+78 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:35:24 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_byte/duct-info.json
+    jobid: 177
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_byte/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__blosc-lz4-level_9-shuffle_byte
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:35:57 2026]
+Finished jobid: 1104 (Rule: run_cell)
+79 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:35:57 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__lz4-acceleration_1/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__lz4-acceleration_1/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__lz4-acceleration_1/duct-info.json
+    jobid: 899
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsbbp__lz4-acceleration_1/metrics.json
+    wildcards: cell_id=aind-634568-lsbbp__lz4-acceleration_1
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:36:16 2026]
+Finished jobid: 1059 (Rule: run_cell)
+80 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:36:16 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__blosc-lz4-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__blosc-lz4-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__blosc-lz4-level_9-shuffle_none/duct-info.json
+    jobid: 59
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-bp__blosc-lz4-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=ibl-CSHZAD026-bp__blosc-lz4-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-625749-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=1.5 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60' returned non-zero exit status 1.
+[Thu Aug 20 15:37:17 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 518
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-625749-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=1.5 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-fbf3bd60/duct-info.json
+Execute 1 jobs...
+[Thu Aug 20 15:37:17 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2-bps_6.0/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2-bps_6.0/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2-bps_6.0/duct-info.json
+    jobid: 619
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__wavpack-level_2-bps_6.0/metrics.json
+    wildcards: cell_id=aind-625749-lsb__wavpack-level_2-bps_6.0
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:37:27 2026]
+Finished jobid: 177 (Rule: run_cell)
+81 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:37:27 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s/duct-info.json
+    jobid: 252
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:38:05 2026]
+Finished jobid: 132 (Rule: run_cell)
+82 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:38:05 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/duct-info.json
+    jobid: 364
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:38:12 2026]
+Finished jobid: 737 (Rule: run_cell)
+83 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:38:12 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s/duct-info.json
+    jobid: 588
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s/metrics.json
+    wildcards: cell_id=aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:38:34 2026]
+Finished jobid: 59 (Rule: run_cell)
+84 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:38:34 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda/duct-info.json
+    jobid: 868
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda/metrics.json
+    wildcards: cell_id=aind-634568-lsb__t261-68e11cda
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:38:40 2026]
+Finished jobid: 457 (Rule: run_cell)
+85 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:38:40 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s/duct-info.json
+    jobid: 196
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:38:40 2026]
+Finished jobid: 899 (Rule: run_cell)
+86 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:38:40 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit/duct-info.json
+    jobid: 1061
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit/metrics.json
+    wildcards: cell_id=aind-634569-lsb__blosc-zlib-level_9-shuffle_bit
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+[Thu Aug 20 15:39:50 2026]
+Finished jobid: 619 (Rule: run_cell)
+87 of 1393 steps (6%) done
+Execute 1 jobs...
+[Thu Aug 20 15:39:50 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none/duct-info.json
+    jobid: 1341
+    reason: Missing output files: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none/metrics.json
+    wildcards: cell_id=aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none
+    resources: tmpdir=/data/yoh/compression-comparisons/.tmp, mem_mb=4096, mem_mib=3907, time_min=30
+Select jobs to execute...
+Will exit after finishing currently running jobs (scheduler).
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-625749-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=2.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 519
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-625749-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=2.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe01-raw.yaml \
+                --codec lzma \
+                --codec-params preset=9 \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 382
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe01-raw.yaml \
+                --codec lzma \
+                --codec-params preset=9 \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-raw__t261-178c1436/duct-info.json
+Will exit after finishing currently running jobs (scheduler).
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe00-raw.yaml \
+                --codec zstd \
+                --codec-params level=22 \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 264
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe00-raw.yaml \
+                --codec zstd \
+                --codec-params level=22 \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe01-raw.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=byte \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 364
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe01-raw.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=byte \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe01-raw.yaml \
+                --codec lzma \
+                --codec-params preset=9 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 381
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe01-raw.yaml \
+                --codec lzma \
+                --codec-params preset=9 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe01-raw.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=byte \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 363
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe01-raw.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=byte \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD029-bp.yaml \
+                --codec lzma \
+                --codec-params preset=9 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 207
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD029-bp.yaml \
+                --codec lzma \
+                --codec-params preset=9 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634569-lsb.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=byte \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 1060
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634569-lsb.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=byte \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634571-lsbbp.yaml \
+                --codec blosc-lz4hc \
+                --codec-params level=9,shuffle=none \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 1341
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634571-lsbbp.yaml \
+                --codec blosc-lz4hc \
+                --codec-params level=9,shuffle=none \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-625749-lsb.yaml \
+                --codec blosc-lz4hc \
+                --codec-params level=9,shuffle=none \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 588
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-625749-lsb.yaml \
+                --codec blosc-lz4hc \
+                --codec-params level=9,shuffle=none \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634568-lsb.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=2.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 867
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634568-lsb.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=2.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD026-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=8.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 58
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD026-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=8.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD029-bp.yaml \
+                --codec lzma \
+                --codec-params preset=9 \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 208
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD029-bp.yaml \
+                --codec lzma \
+                --codec-params preset=9 \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe00-raw.yaml \
+                --codec blosc-zstd \
+                --codec-params level=9,shuffle=none \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 252
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe00-raw.yaml \
+                --codec blosc-zstd \
+                --codec-params level=9,shuffle=none \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD029-bp.yaml \
+                --codec blosc-zstd \
+                --codec-params level=9,shuffle=byte \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 196
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD029-bp.yaml \
+                --codec blosc-zstd \
+                --codec-params level=9,shuffle=byte \
+                --chunk-duration-s 1.0 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9-chunk1s/duct-info.json
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe00-raw.yaml \
+                --codec zstd \
+                --codec-params level=22 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 263
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-SWC054-probe00-raw.yaml \
+                --codec zstd \
+                --codec-params level=22 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634568-lsb.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=3.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 868
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634568-lsb.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=3.0 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634568-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel_lossless \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 749
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634568-raw.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel_lossless \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634569-lsb.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=bit \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 1061
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634569-lsb.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=bit \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634569-bp.yaml \
+                --codec zstd \
+                --codec-params level=22 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 1017
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/aind-634569-bp.yaml \
+                --codec zstd \
+                --codec-params level=22 \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 233:
+Command 'set -euo pipefail;  
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD026-raw.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=byte \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 15:41:47 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 15
+    output: derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte/duct-info.json
+    shell:
+        
+        export TMPDIR=/data/yoh/compression-comparisons/.tmp
+        export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
+        export PATH=/data/yoh/compression-comparisons/vendor/wavpack/bin:"$PATH"; export LD_LIBRARY_PATH=/data/yoh/compression-comparisons/vendor/wavpack/lib:"${LD_LIBRARY_PATH:-}"
+        mkdir -p derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input derivatives/compbench-2026-08-20-np1-8-slice60s/generated-datasets/ibl-CSHZAD026-raw.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=byte \
+                 \
+                --output-dir derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte-chunk1s/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__lzma-preset_9/duct-info.json
+Will exit after finishing currently running jobs (scheduler).
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22-chunk1s/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe01-raw__blosc-zlib-level_9-shuffle_byte/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_byte-chunk1s/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634571-lsbbp__blosc-lz4hc-level_9-shuffle_none/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-625749-lsb__blosc-lz4hc-level_9-shuffle_none-chunk1s/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-178c1436/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__t261-26ca7af3/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__lzma-preset_9-chunk1s/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__blosc-zstd-level_9-shuffle_none-chunk1s/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD029-bp__blosc-zstd-level_9-shuffle_byte-chunk1s/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-SWC054-probe00-raw__zstd-level_22/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-lsb__t261-68e11cda/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634568-raw__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-lsb__blosc-zlib-level_9-shuffle_bit/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/aind-634569-bp__zstd-level_22/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-np1-8-slice60s/ibl-CSHZAD026-raw__blosc-zlib-level_9-shuffle_byte/duct-info.json
+Will exit after finishing currently running jobs (scheduler).
+Shutting down, this might take some time.
+Complete log(s): /data/yoh/compression-comparisons/results/dandi-t261-compression-study/.snakemake/log/2026-08-20T144121.034736.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

@@ -1,0 +1,901 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-08-20 09:38:14
+  Workflow ID: ec160504-85b6-4675-9c39-f20f851d0917
+  Platform: Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.36
+  Host: 7c8e5c34d66f
+  User: node
+  Snakemake version: 9.25.2
+  Python version: 3.11.2 (main, Apr 28 2025, 14:11:48) [GCC 12.2.0]
+  Command: /data/yoh/compression-comparisons/.venv/bin/snakemake -s /data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile --configfile /data/yoh/compression-comparisons/configs/profiles/paper-real.yaml --config results_dir=derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify --cores 21 --keep-going
+  Snakefile: /data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile
+  Base directory: /data/yoh/compression-comparisons/src/compbench/pipeline
+  Run directory: /data/yoh/compression-comparisons/results/dandi-t261-compression-study
+  Working directory: /data/yoh/compression-comparisons/results/dandi-t261-compression-study
+  Config file(s): [PosixPath('/data/yoh/compression-comparisons/configs/profiles/paper-real.yaml')]
+  Config MD5: 11ac31f7bf478cfa2675d14ca9718463
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 21
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+run_cell       21
+all             1
+total          22
+
+Select jobs to execute...
+Execute 21 jobs...
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct-info.json
+    jobid: 16
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/duct-info.json
+    jobid: 8
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/duct-info.json
+    jobid: 2
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/duct-info.json
+    jobid: 17
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/duct-info.json
+    jobid: 9
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__gzip-level_5
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/duct-info.json
+    jobid: 5
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/duct-info.json
+    jobid: 18
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-178c1436
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/duct-info.json
+    jobid: 10
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__zlib-level_5
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/duct-info.json
+    jobid: 3
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/duct-info.json
+    jobid: 19
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/duct-info.json
+    jobid: 12
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__zstd-level_3
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/duct-info.json
+    jobid: 4
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/duct-info.json
+    jobid: 20
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/duct-info.json
+    jobid: 13
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__zstd-level_22
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/duct-info.json
+    jobid: 11
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/duct-info.json
+    jobid: 21
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/duct-info.json
+    jobid: 14
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/duct-info.json
+    jobid: 6
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct-info.json
+    jobid: 15
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/duct-info.json
+    jobid: 7
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Thu Aug 20 09:38:14 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/duct-info.json
+    jobid: 1
+    reason: Missing output files: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/metrics.json; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' now: '/data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml' 
+    wildcards: cell_id=aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte
+    resources: tmpdir=/tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+Will exit after finishing currently running jobs (scheduler).
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_lossless \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 16
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_lossless \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_lossless/duct-info.json
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec lzma \
+                --codec-params preset=6 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6' died with <Signals.SIGTERM: 15>.
+Will exit after finishing currently running jobs (scheduler).
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 14
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec lzma \
+                --codec-params preset=6 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-lz4hc \
+                --codec-params level=9,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-lz4 \
+                --codec-params level=9,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-zstd \
+                --codec-params level=9,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 4
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-lz4hc \
+                --codec-params level=9,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=2.0 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-zstd \
+                --codec-params level=3,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec zlib \
+                --codec-params level=5 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=5.0 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=8.0 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 2
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-lz4 \
+                --codec-params level=9,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec gzip \
+                --codec-params level=5 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec zstd \
+                --codec-params level=22 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 8
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-zstd \
+                --codec-params level=9,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 6
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-zlib \
+                --codec-params level=9,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 18
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=2.0 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-zlib \
+                --codec-params level=3,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-lz4hc \
+                --codec-params level=3,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 7
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-zstd \
+                --codec-params level=3,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=1.5 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-lz4 \
+                --codec-params level=3,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec lz4 \
+                --codec-params acceleration=1 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel_lossless \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless' died with <Signals.SIGTERM: 15>.
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=3.0 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 10
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec zlib \
+                --codec-params level=5 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 20
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=5.0 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/data/yoh/compression-comparisons/src/compbench/pipeline/Snakefile", line 135:
+Command 'set -euo pipefail;  
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec zstd \
+                --codec-params level=3 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3' died with <Signals.SIGTERM: 15>.
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 21
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=8.0 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 9
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec gzip \
+                --codec-params level=5 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 13
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec zstd \
+                --codec-params level=22 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lzma-preset_6/duct-info.json
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 5
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-zlib \
+                --codec-params level=3,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 3
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-lz4hc \
+                --codec-params level=3,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 17
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=1.5 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 1
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec blosc-lz4 \
+                --codec-params level=3,shuffle=byte \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 11
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec lz4 \
+                --codec-params acceleration=1 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 15
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel_lossless \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 19
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec t261 \
+                --codec-params preset=combinedPresetEEG_IndepChannel,step_size_for_qp=3.0 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda
+        
+        (command exited with non-zero exit code)
+[Thu Aug 20 09:39:34 2026]
+Error in rule run_cell:
+    message: None
+    jobid: 12
+    output: derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/metrics.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/manifest.json, derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/duct-info.json
+    shell:
+        
+        mkdir -p derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3
+        duct \
+            --output-prefix derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/duct- \
+            --sample-interval 1 \
+            --report-interval 5 \
+            compbench run \
+                --input /data/yoh/compression-comparisons/configs/datasets/aind-ibl-np1-CSHZAD026-slice10s-bp-sourcedata.yaml \
+                --codec zstd \
+                --codec-params level=3 \
+                --output-dir derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3
+        
+        (command exited with non-zero exit code)
+Will exit after finishing currently running jobs (scheduler).
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_9-shuffle_byte/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_9-shuffle_byte/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_9-shuffle_byte/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_9-shuffle_byte/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-178c1436/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zstd-level_3-shuffle_byte/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zlib-level_5/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-2ab16306/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-26ca7af3/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__gzip-level_5/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_22/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-zlib-level_3-shuffle_byte/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4hc-level_3-shuffle_byte/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-fbf3bd60/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__blosc-lz4-level_3-shuffle_byte/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__lz4-acceleration_1/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-preset_combinedPresetEEG_IndepChannel_lossless/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__t261-68e11cda/duct-info.json
+Removing output files of failed job run_cell since they might be corrupted:
+derivatives/compbench-2026-08-20-CSHZAD026-slice10s-bandpass-v3-verify/aind-ibl-np1-CSHZAD026-slice10__zstd-level_3/duct-info.json
+Will exit after finishing currently running jobs (scheduler).
+Shutting down, this might take some time.
+Complete log(s): /data/yoh/compression-comparisons/results/dandi-t261-compression-study/.snakemake/log/2026-08-20T093814.183266.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

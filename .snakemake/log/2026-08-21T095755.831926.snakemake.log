@@ -1,0 +1,115 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-08-21 09:57:55
+  Workflow ID: 88ffa477-a2b8-44da-b447-4980bab42335
+  Platform: Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.41
+  Host: 327bc5911745
+  User: node
+  Snakemake version: 9.25.2
+  Python version: 3.13.15 (main, Aug 14 2026, 15:34:59) [Clang 22.1.3 ]
+  Command: /data/yoh/compression-comparisons/results/dandi-t261-compression-study/code/compression-comparisons-tools/.venv/bin/snakemake -s /data/yoh/compression-comparisons/results/dandi-t261-compression-study/code/compression-comparisons-tools/src/compbench/pipeline/Snakefile --configfile /data/yoh/compression-comparisons/results/dandi-t261-compression-study/code/compression-comparisons-tools/configs/profiles/paper-real-np1-8-general.yaml --config results_dir=derivatives/compbench-2026-08-21-paper-real-np1-8-general --nocolor --cores 10 --keep-going
+  Snakefile: /data/yoh/compression-comparisons/results/dandi-t261-compression-study/code/compression-comparisons-tools/src/compbench/pipeline/Snakefile
+  Base directory: /data/yoh/compression-comparisons/results/dandi-t261-compression-study/code/compression-comparisons-tools/src/compbench/pipeline
+  Run directory: /data/yoh/compression-comparisons/results/dandi-t261-compression-study
+  Working directory: /data/yoh/compression-comparisons/results/dandi-t261-compression-study
+  Config file(s): [PosixPath('/data/yoh/compression-comparisons/results/dandi-t261-compression-study/code/compression-comparisons-tools/configs/profiles/paper-real-np1-8-general.yaml')]
+  Config MD5: 9c506cc6d8b3a03a2aa52401cb5171f9
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+run_cell      912
+all             1
+total         913
+
+Select jobs to execute...
+Execute 10 jobs...
+[Fri Aug 21 09:57:56 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-bp__blosc-zstd-level_9-shuffle_bit-delta_2d-time-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-bp__blosc-zstd-level_9-shuffle_bit-delta_2d-time-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-bp__blosc-zstd-level_9-shuffle_bit-delta_2d-time-chunk1s/duct-info.json
+    jobid: 831
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-bp__blosc-zstd-level_9-shuffle_bit-delta_2d-time-chunk1s/metrics.json
+    wildcards: cell_id=aind-634571-bp__blosc-zstd-level_9-shuffle_bit-delta_2d-time-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Fri Aug 21 09:57:56 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634568-lsb__lz4-acceleration_1-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634568-lsb__lz4-acceleration_1-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634568-lsb__lz4-acceleration_1-shuffle_byte-chunk1s/duct-info.json
+    jobid: 550
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634568-lsb__lz4-acceleration_1-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-lsb__lz4-acceleration_1-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Fri Aug 21 09:57:56 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634569-raw__blosc-lz4-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634569-raw__blosc-lz4-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634569-raw__blosc-lz4-level_9-shuffle_byte-chunk1s/duct-info.json
+    jobid: 610
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634569-raw__blosc-lz4-level_9-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-raw__blosc-lz4-level_9-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Fri Aug 21 09:57:56 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634569-bp__wavpack-level_2-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634569-bp__wavpack-level_2-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634569-bp__wavpack-level_2-chunk1s/duct-info.json
+    jobid: 670
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634569-bp__wavpack-level_2-chunk1s/metrics.json
+    wildcards: cell_id=aind-634569-bp__wavpack-level_2-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Fri Aug 21 09:57:56 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-raw__wavpack-level_2-bps_2.5-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-raw__wavpack-level_2-bps_2.5-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-raw__wavpack-level_2-bps_2.5-chunk1s/duct-info.json
+    jobid: 790
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-raw__wavpack-level_2-bps_2.5-chunk1s/metrics.json
+    wildcards: cell_id=aind-634571-raw__wavpack-level_2-bps_2.5-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Fri Aug 21 09:57:56 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/ibl-CSHZAD029-bp__lz4-acceleration_1-shuffle_no-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/ibl-CSHZAD029-bp__lz4-acceleration_1-shuffle_no-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/ibl-CSHZAD029-bp__lz4-acceleration_1-shuffle_no-chunk1s/duct-info.json
+    jobid: 131
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/ibl-CSHZAD029-bp__lz4-acceleration_1-shuffle_no-chunk1s/metrics.json
+    wildcards: cell_id=ibl-CSHZAD029-bp__lz4-acceleration_1-shuffle_no-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Fri Aug 21 09:57:56 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/ibl-SWC054-probe01-raw__flac-level_5-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/ibl-SWC054-probe01-raw__flac-level_5-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/ibl-SWC054-probe01-raw__flac-level_5-chunk1s/duct-info.json
+    jobid: 251
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/ibl-SWC054-probe01-raw__flac-level_5-chunk1s/metrics.json
+    wildcards: cell_id=ibl-SWC054-probe01-raw__flac-level_5-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Fri Aug 21 09:57:56 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-625749-bp__wavpack-level_2-bps_3.0-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-625749-bp__wavpack-level_2-bps_3.0-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-625749-bp__wavpack-level_2-bps_3.0-chunk1s/duct-info.json
+    jobid: 371
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-625749-bp__wavpack-level_2-bps_3.0-chunk1s/metrics.json
+    wildcards: cell_id=aind-625749-bp__wavpack-level_2-bps_3.0-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Fri Aug 21 09:57:56 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-625749-lsbbp__gzip-level_9-shuffle_no-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-625749-lsbbp__gzip-level_9-shuffle_no-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-625749-lsbbp__gzip-level_9-shuffle_no-chunk1s/duct-info.json
+    jobid: 431
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-625749-lsbbp__gzip-level_9-shuffle_no-chunk1s/metrics.json
+    wildcards: cell_id=aind-625749-lsbbp__gzip-level_9-shuffle_no-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+[Fri Aug 21 09:57:56 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-raw__wavpack-level_2-bps_2.25-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-raw__wavpack-level_2-bps_2.25-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-raw__wavpack-level_2-bps_2.25-chunk1s/duct-info.json
+    jobid: 791
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634571-raw__wavpack-level_2-bps_2.25-chunk1s/metrics.json
+    wildcards: cell_id=aind-634571-raw__wavpack-level_2-bps_2.25-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+Select jobs to execute...
+[Fri Aug 21 10:33:33 2026]
+Finished jobid: 610 (Rule: run_cell)
+1 of 913 steps (0.1%) done
+Execute 1 jobs...
+[Fri Aug 21 10:33:33 2026]
+localrule run_cell:
+    output: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634568-lsbbp__blosc-zstd-level_9-shuffle_byte-chunk1s/metrics.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634568-lsbbp__blosc-zstd-level_9-shuffle_byte-chunk1s/manifest.json, derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634568-lsbbp__blosc-zstd-level_9-shuffle_byte-chunk1s/duct-info.json
+    jobid: 581
+    reason: Missing output files: derivatives/compbench-2026-08-21-paper-real-np1-8-general/aind-634568-lsbbp__blosc-zstd-level_9-shuffle_byte-chunk1s/metrics.json
+    wildcards: cell_id=aind-634568-lsbbp__blosc-zstd-level_9-shuffle_byte-chunk1s
+    resources: tmpdir=/data/yoh/compression-comparisons/results/dandi-t261-compression-study/.tmp, time_min=30, mem_mb=4096, mem=4.1 GB, mem_mib=3907
+Select jobs to execute...

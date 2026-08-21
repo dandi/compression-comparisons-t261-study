@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "/data/yoh/compression-comparisons/.venv/bin/compbench", line 10, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/data/yoh/compression-comparisons/.venv/lib/python3.13/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/data/yoh/compression-comparisons/.venv/lib/python3.13/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+  File "/data/yoh/compression-comparisons/.venv/lib/python3.13/site-packages/click/core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/data/yoh/compression-comparisons/.venv/lib/python3.13/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/yoh/compression-comparisons/.venv/lib/python3.13/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+  File "/data/yoh/compression-comparisons/src/compbench/cli.py", line 111, in run
+    result = run_cell(
+        spec=input_spec,
+    ...<2 lines>...
+        chunk_duration_s=chunk_duration_s,
+    )
+  File "/data/yoh/compression-comparisons/src/compbench/runner.py", line 133, in run_cell
+    encoded, enc_dt = encode(ds, adapter, chunk_samples=chunk_samples)
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/yoh/compression-comparisons/src/compbench/runner.py", line 65, in encode
+    out = [bytes(codec.encode(np.ascontiguousarray(data[a:b]))) for a, b in bounds]
+                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/yoh/compression-comparisons/src/compbench/codecs/t261.py", line 273, in encode
+    self._run_bwc(cmd, scratch, phase="encode")
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/yoh/compression-comparisons/src/compbench/codecs/t261.py", line 231, in _run_bwc
+    proc.wait(timeout=1800)
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/node/.local/share/uv/python/cpython-3.13.15-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 1280, in wait
+    return self._wait(timeout=timeout)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/node/.local/share/uv/python/cpython-3.13.15-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 2077, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/data/yoh/compression-comparisons/src/bwc/bin/release/EncoderApp', '-c', '/data/yoh/compression-comparisons/src/bwc/cfg/combinedPresetEEG_IndepChannel.cfg', '--InputFile=/data/yoh/compression-comparisons/.tmp/t261-enc-wdl532du/input.raw', '--InputBitDepth=16', '--InputNumChannels=384', '--BitstreamFile=/data/yoh/compression-comparisons/.tmp/t261-enc-wdl532du/output.bwc', '--FileFormat=RawH2', '--StepSizeForQP=1.5']' timed out after 1800 seconds

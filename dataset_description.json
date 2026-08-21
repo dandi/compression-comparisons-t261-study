@@ -1,0 +1,36 @@
+{
+  "Name": "ITU-T T.261 / H.BWC evaluation against the Buccino et al. 2023 ephys compression benchmark",
+  "BIDSVersion": "1.9.0",
+  "DatasetType": "derivative",
+  "License": "MIT (code and derivatives); see sourcedata/ and src/ for upstream terms",
+  "Authors": ["Yaroslav O. Halchenko"],
+  "Acknowledgements": "Source recordings and the reference results are the work of the Allen Institute for Neural Dynamics; see ReferencesAndLinks.",
+  "HowToAcknowledge": "Cite Buccino et al. 2023 (doi:10.1088/1741-2552/acf5a4) for the benchmark this study reproduces and extends.",
+  "GeneratedBy": [
+    {
+      "Name": "compbench",
+      "Description": "Turnkey benchmark for compression of biomedical waveform data. Run from the pinned checkout at code/compression-comparisons-tools via code/run_sweep.sh, which refuses to execute against a drifted or dirty tool checkout.",
+      "CodeURL": "code/compression-comparisons-tools"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "///aind-benchmark-data/ephys-compression",
+      "Description": "16 Neuropixels recordings (8 NP1, 8 NP2) plus two MEArec ground-truth simulations, as published by AIND on the AWS Open Data registry."
+    }
+  ],
+  "ReferencesAndLinks": [
+    "https://doi.org/10.1088/1741-2552/acf5a4",
+    "https://github.com/AllenNeuralDynamics/ephys-compression",
+    "https://github.com/AllenNeuralDynamics/aind-capsule-ephys-compression-results",
+    "https://registry.opendata.aws/allen-nd-ephys-compression/",
+    "https://vcgit.hhi.fraunhofer.de/vceg-sw/bwc"
+  ],
+  "Purpose": "Two questions, in order. (1) Can an independent reimplementation reproduce Buccino et al.'s lossless compression results on their own recordings, at their own conditions? (2) Where does the newly standardised ITU-T T.261 / H.BWC codec sit against that codec set -- not only on compression ratio and signal distortion, but on the spikes recovered from the decompressed data.",
+  "Layout": {
+    "sourcedata/aind-ephys-compression": "The AIND benchmark recordings, as a DataLad subdataset. Never modified.",
+    "code/compression-comparisons-tools": "The benchmark tool, pinned as a submodule. The commit recorded here is the commit that produced the derivatives.",
+    "code/run_sweep.sh": "Entry point. Runs the pinned tool from an environment inside this dataset.",
+    "derivatives/": "One directory per sweep, dated. Measurements here are immutable (see the plan's decision 6); narrative files may be corrected in place with the correction visible in git history."
+  }
+}
