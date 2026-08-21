@@ -1,0 +1,27 @@
+{
+  "sorter": "kilosort4",
+  "sorter_version": "4.1.7",
+  "sorter_params": {},
+  "presort": {
+    "bandpass_hz": [
+      300.0,
+      6000.0
+    ],
+    "common_reference": false
+  },
+  "n_units": 76,
+  "n_spikes": 29193,
+  "sort_s": 47.245243694633245,
+  "sorting_path": "derivatives/sorting-loop-2026-08-21/bittrunc-bits0/sorting",
+  "zarr_path": "derivatives/sorting-loop-2026-08-21/bittrunc-bits0/compressed.zarr",
+  "versions": {
+    "python": "3.13.15",
+    "numcodecs": "0.15.1",
+    "spikeinterface": "0.104.8",
+    "compbench_git_sha": "9ac3cba8bf66cf0d985608cd426d45b49a97cf32",
+    "platform": "Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.41",
+    "libc": "glibc-2.41",
+    "torch": "2.13.0+cu130",
+    "cuda_device": "NVIDIA A100-PCIE-40GB"
+  }
+}
