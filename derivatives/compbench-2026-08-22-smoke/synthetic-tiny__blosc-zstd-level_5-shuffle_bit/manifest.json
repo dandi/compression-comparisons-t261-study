@@ -9,8 +9,8 @@
     }
   },
   "compbench_version": "0.0.1.dev0",
-  "created_utc": "2026-08-22T14:14:48+00:00",
-  "git_sha": "6089bd28b3372616ae175fbc3a11ba6b617ce7bd",
+  "created_utc": "2026-08-22T14:16:23+00:00",
+  "git_sha": "697f751b1c35389271d0f9b9d5ba191fe671f6b5",
   "input": {
     "dtype": "int16",
     "duration_s": 0.5,
