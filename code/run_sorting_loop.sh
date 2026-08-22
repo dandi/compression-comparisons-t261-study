@@ -6,6 +6,24 @@
 # Serial by construction: `datalad run` is not concurrency-safe within a
 # dataset (measured: 5 of 8 concurrent invocations fail on index.lock).
 set -euo pipefail
+
+# Refuse to run against a datalad that cannot record this sweep correctly.
+# Released datalad (<= 1.6.2) loses run records under concurrency and rejects
+# nested runs (gh-7899, gh-7900). See .specify/specs/datalad-pin.md.
+DATALAD_PIN="30b6deef70e6808de43c40bfe870462de7ae9373"
+DATALAD_VERSION="$(datalad --version 2>&1 | awk '{print $NF}')"
+case "$DATALAD_VERSION" in
+    *"${DATALAD_PIN:0:9}"*) : ;;
+    *)
+        echo "datalad is $DATALAD_VERSION, but this study needs the #7901 fixes." >&2
+        echo "Provenance would be silently wrong: concurrent runs lose records." >&2
+        echo "Install with:" >&2
+        echo "  uv tool install --force \\" >&2
+        echo "    \"datalad @ git+https://github.com/datalad/datalad.git@$DATALAD_PIN\"" >&2
+        echo "Or set COMPBENCH_ALLOW_ANY_DATALAD=1 to override (records may be wrong)." >&2
+        [ -n "${COMPBENCH_ALLOW_ANY_DATALAD:-}" ] || exit 1
+        ;;
+esac
 STUDY="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$STUDY"
 VENV="$STUDY/envs/compbench"

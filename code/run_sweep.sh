@@ -21,6 +21,24 @@
 #   e.g.  ./code/run_sweep.sh paper-real-np1-8-general --cores 10
 set -euo pipefail
 
+# Refuse to run against a datalad that cannot record this sweep correctly.
+# Released datalad (<= 1.6.2) loses run records under concurrency and rejects
+# nested runs (gh-7899, gh-7900). See .specify/specs/datalad-pin.md.
+DATALAD_PIN="30b6deef70e6808de43c40bfe870462de7ae9373"
+DATALAD_VERSION="$(datalad --version 2>&1 | awk '{print $NF}')"
+case "$DATALAD_VERSION" in
+    *"${DATALAD_PIN:0:9}"*) : ;;
+    *)
+        echo "datalad is $DATALAD_VERSION, but this study needs the #7901 fixes." >&2
+        echo "Provenance would be silently wrong: concurrent runs lose records." >&2
+        echo "Install with:" >&2
+        echo "  uv tool install --force \\" >&2
+        echo "    \"datalad @ git+https://github.com/datalad/datalad.git@$DATALAD_PIN\"" >&2
+        echo "Or set COMPBENCH_ALLOW_ANY_DATALAD=1 to override (records may be wrong)." >&2
+        [ -n "${COMPBENCH_ALLOW_ANY_DATALAD:-}" ] || exit 1
+        ;;
+esac
+
 STUDY="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 TOOL="$STUDY/code/compression-comparisons-tools"
 # The environment lives in the STUDY, not inside the pinned submodule: the
@@ -81,16 +99,22 @@ cd "$STUDY"
 # ---------------------------------------------------------------------------
 # Provenance: ONE `datalad run` wrapping the whole sweep.
 #
-# Not one per cell. Measured: eight concurrent `datalad run` invocations in a
-# single dataset produce five failures out of eight (git index.lock
-# contention, exit 128), three run records, and five outputs left untracked.
-# `datalad run` is not concurrency-safe within a dataset, and a sweep is
-# hundreds of cells wide.
+# HISTORY: this was originally forced on us. Released datalad (<= 1.6.2) is
+# not concurrency-safe within a dataset — eight concurrent `datalad run`
+# invocations produced five failures out of eight (index.lock, exit 128),
+# three run records, and five outputs left untracked — and it rejected
+# nested runs outright. Both are fixed in the pinned datalad above
+# (gh-7899, gh-7900); concurrency is now clean at N=64 and one outer run
+# with 16 parallel inner runs records correctly.
 #
-# One record wrapping a parallel snakemake gives a clean commit with the
-# command, inputs and outputs — verified. Per-cell provenance is not lost: it
-# lives in each cell's manifest.json (tool SHA, BWC SHA, codec params and
-# filters, input sha256, git-annex key of the source recording).
+# So per-cell `datalad run` records are now POSSIBLE. They are not yet
+# WIRED UP: emitting them belongs in the Snakefile rule that runs a cell,
+# not here, and until that lands this outer record is what exists. See
+# .specify/specs/datalad-pin.md and the plan's provenance section.
+#
+# Per-cell provenance is not lost in the meantime: it lives in each cell's
+# manifest.json (tool SHA, BWC SHA, codec params and filters, input sha256,
+# git-annex key of the source recording).
 #
 # `--explicit` so an unrelated dirty file elsewhere in the study does not
 # block a sweep, and so only the declared outputs are saved.
