@@ -3,3 +3,4 @@
 # every sweep. Provenance lives in the run records and each cell's manifest.
 .snakemake/
 .tmp/
+.sweep-logs/
