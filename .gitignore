@@ -1,0 +1,5 @@
+
+# Snakemake's own bookkeeping and scratch — not results, and they churn on
+# every sweep. Provenance lives in the run records and each cell's manifest.
+.snakemake/
+.tmp/
