@@ -1,0 +1,46 @@
+{
+  "codec": {
+    "blosc_nthreads": 1,
+    "lossy": false,
+    "name": "blosc-zstd",
+    "params": {
+      "level": 3,
+      "shuffle": "byte"
+    }
+  },
+  "compbench_version": "0.0.1.dev0",
+  "created_utc": "2026-08-22T14:13:21+00:00",
+  "git_sha": "4ab470905ad1270fb9044e0d1fe4f6c350a03958",
+  "input": {
+    "dtype": "int16",
+    "duration_s": 0.5,
+    "n_channels": 4,
+    "nbytes": 8000,
+    "provenance": {
+      "loader": "synthetic",
+      "params": {
+        "dtype": "int16",
+        "duration_s": 0.5,
+        "n_channels": 4,
+        "sample_rate_hz": 2000.0,
+        "seed": 1
+      },
+      "yaml_source": "/data/yoh/compression-comparisons/results/dandi-t261-compression-study/code/compression-comparisons-tools/configs/datasets/synthetic-tiny.yaml"
+    },
+    "sample_rate_hz": 2000.0,
+    "sha256": "3181c04c0fd3650ac785857e364533d8e09d108f589eb96b06fe6afb45a85095",
+    "shape": [
+      1000,
+      4
+    ]
+  },
+  "platform": {
+    "machine": "x86_64",
+    "release": "6.12.57+deb13-amd64",
+    "system": "Linux"
+  },
+  "python": {
+    "impl": "CPython",
+    "version": "3.13.15"
+  }
+}
