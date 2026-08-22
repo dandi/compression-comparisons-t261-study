@@ -1,0 +1,56 @@
+{
+  "codec": {
+    "blosc_nthreads": 1,
+    "lossy": false,
+    "name": "blosc-zstd",
+    "params": {
+      "level": 9,
+      "shuffle": "bit"
+    }
+  },
+  "compbench_version": "0.0.1.dev0",
+  "created_utc": "2026-08-22T14:20:32+00:00",
+  "git_sha": "dee2dfd21103856f17645591adf285a489fba2fe",
+  "input": {
+    "dtype": "int16",
+    "duration_s": 5.0,
+    "n_channels": 384,
+    "nbytes": 115200000,
+    "provenance": {
+      "loader": "aind-benchmark",
+      "params": {
+        "channel_indices": null,
+        "duration_s": 5.0,
+        "path": "sourcedata/aind-ephys-compression/aind-np1/625749_2022-08-03_15-15-06_ProbeA",
+        "start_s": 0.0
+      },
+      "source": {
+        "annex_key": "MD5E-s41864785920--5ee3becd7363f4e8a237a335a0916b4a.raw",
+        "dataset_commit": "df5736f545caaf73af5abb38e9a30f6fe04fa3d7",
+        "dataset_root": "/data/yoh/compression-comparisons/results/dandi-t261-compression-study/sourcedata/aind-ephys-compression"
+      },
+      "spikeinterface": {
+        "dtype_native": "int16",
+        "folder_name": "625749_2022-08-03_15-15-06_ProbeA",
+        "n_channels_total": 384,
+        "sampling_frequency_hz": 30000.0
+      },
+      "yaml_source": "derivatives/compbench-2026-08-22-matrix-smoke/generated-datasets/aind-625749-raw.yaml"
+    },
+    "sample_rate_hz": 30000.0,
+    "sha256": "cbd3b0f4cae364d425e152831e1fbc87281b60327da05110254b3516d00acb59",
+    "shape": [
+      150000,
+      384
+    ]
+  },
+  "platform": {
+    "machine": "x86_64",
+    "release": "6.12.57+deb13-amd64",
+    "system": "Linux"
+  },
+  "python": {
+    "impl": "CPython",
+    "version": "3.13.15"
+  }
+}
