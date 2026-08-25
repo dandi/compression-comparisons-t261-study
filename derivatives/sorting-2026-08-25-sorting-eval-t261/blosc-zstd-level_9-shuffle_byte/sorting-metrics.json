@@ -833,7 +833,7 @@
     "python": "3.13.15",
     "numcodecs": "0.15.1",
     "spikeinterface": "0.104.8",
-    "compbench_git_sha": "e61fbc104b30dbd94d2537aec375f503e9ac46b7",
+    "compbench_git_sha": "cd7136a331ff4e6dfb15bea5d88c1242fc67d630",
     "platform": "Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.41",
     "libc": "glibc-2.41",
     "torch": "2.13.0+cu130",
