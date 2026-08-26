@@ -1,0 +1,37 @@
+{
+  "codec": {
+    "name": "blosc-zstd",
+    "lossy": false,
+    "params": {
+      "level": 9,
+      "shuffle": "byte"
+    },
+    "blosc_nthreads": 1
+  },
+  "cr": 2.9330545631949745,
+  "encode_s": 6278.879272904247,
+  "encode_xrt": 0.09555845460976264,
+  "rmse_uv": 0.0,
+  "rmse_window_s": [
+    15.0,
+    20.0
+  ],
+  "round_trip_exact": true,
+  "expected_lossless": true,
+  "lossless_violation": false,
+  "chunk_duration_s": 1.0,
+  "duration_s": 600.0,
+  "n_channels": 384,
+  "sampling_frequency_hz": 32000.0,
+  "zarr_path": "derivatives/sorting-2026-08-26-sorting-eval-t261-600s/blosc-zstd-level_9-shuffle_byte/compressed.zarr",
+  "versions": {
+    "python": "3.13.15",
+    "numcodecs": "0.15.1",
+    "spikeinterface": "0.104.8",
+    "compbench_git_sha": "da408667a08715745541c5f3e385351620f30e72",
+    "platform": "Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.41",
+    "libc": "glibc-2.41",
+    "torch": "2.13.0+cu130",
+    "cuda_device": "NVIDIA A100-PCIE-40GB"
+  }
+}
