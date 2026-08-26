@@ -1,0 +1,38 @@
+{
+  "codec": {
+    "name": "wavpack",
+    "lossy": true,
+    "params": {
+      "level": 2,
+      "bps": 3.0
+    },
+    "wavpack_numcodecs_version": "0.2.3",
+    "hybrid_flag_semantics": "or-equals (>=0.2.0)"
+  },
+  "cr": 5.759467915156326,
+  "encode_s": 110.34404840692878,
+  "encode_xrt": 0.9062563993593763,
+  "rmse_uv": 1.5019476191053238,
+  "rmse_window_s": [
+    15.0,
+    20.0
+  ],
+  "round_trip_exact": false,
+  "expected_lossless": false,
+  "lossless_violation": false,
+  "chunk_duration_s": 1.0,
+  "duration_s": 100.0,
+  "n_channels": 384,
+  "sampling_frequency_hz": 32000.0,
+  "zarr_path": "derivatives/sorting-2026-08-25-sorting-eval-t261/wavpack-level_2-bps_3.0/compressed.zarr",
+  "versions": {
+    "python": "3.13.15",
+    "numcodecs": "0.15.1",
+    "spikeinterface": "0.104.8",
+    "compbench_git_sha": "26c960c00d474a37c80db74c26c2553efb4f6138",
+    "platform": "Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.41",
+    "libc": "glibc-2.41",
+    "torch": "2.13.0+cu130",
+    "cuda_device": "NVIDIA A100-PCIE-40GB"
+  }
+}
