@@ -1,0 +1,842 @@
+{
+  "pooled": {
+    "accuracy": 0.8886161776180718,
+    "recall": 0.9380964571410023,
+    "precision": 0.8992161248001196,
+    "false_discovery_rate": 0.05078387519988033,
+    "miss_rate": 0.01190354285899764
+  },
+  "per_unit": [
+    {
+      "gt_unit_id": "#0",
+      "accuracy": 0.9851239669421488,
+      "recall": 0.9851239669421488,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.01487603305785124
+    },
+    {
+      "gt_unit_id": "#1",
+      "accuracy": 0.678407350689127,
+      "recall": 1.0,
+      "precision": 0.678407350689127,
+      "false_discovery_rate": 0.3215926493108729,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#2",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#3",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#4",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#5",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#6",
+      "accuracy": 0.7327690447400241,
+      "recall": 1.0,
+      "precision": 0.7327690447400241,
+      "false_discovery_rate": 0.2672309552599758,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#7",
+      "accuracy": 0.8828125,
+      "recall": 1.0,
+      "precision": 0.8828125,
+      "false_discovery_rate": 0.1171875,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#8",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#9",
+      "accuracy": 0.6858316221765913,
+      "recall": 1.0,
+      "precision": 0.6858316221765913,
+      "false_discovery_rate": 0.3141683778234086,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#10",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#11",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#12",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#13",
+      "accuracy": 0.984375,
+      "recall": 0.998019801980198,
+      "precision": 0.9863013698630136,
+      "false_discovery_rate": 0.0136986301369863,
+      "miss_rate": 0.0019801980198019802
+    },
+    {
+      "gt_unit_id": "#14",
+      "accuracy": 0.8193202146690519,
+      "recall": 1.0,
+      "precision": 0.8193202146690519,
+      "false_discovery_rate": 0.1806797853309481,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#15",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#16",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#17",
+      "accuracy": 0.9982363315696648,
+      "recall": 1.0,
+      "precision": 0.9982363315696648,
+      "false_discovery_rate": 0.001763668430335097,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#18",
+      "accuracy": 0.8510948905109489,
+      "recall": 1.0,
+      "precision": 0.8510948905109489,
+      "false_discovery_rate": 0.14890510948905109,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#19",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#20",
+      "accuracy": 0.9978947368421053,
+      "recall": 1.0,
+      "precision": 0.9978947368421053,
+      "false_discovery_rate": 0.002105263157894737,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#21",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#22",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#23",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#24",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#25",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#26",
+      "accuracy": 0.7669773635153129,
+      "recall": 1.0,
+      "precision": 0.7669773635153129,
+      "false_discovery_rate": 0.23302263648468707,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#27",
+      "accuracy": 0.9893778452200304,
+      "recall": 1.0,
+      "precision": 0.9893778452200304,
+      "false_discovery_rate": 0.010622154779969651,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#28",
+      "accuracy": 0.9647749510763209,
+      "recall": 1.0,
+      "precision": 0.9647749510763209,
+      "false_discovery_rate": 0.03522504892367906,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#29",
+      "accuracy": 0.6884955752212389,
+      "recall": 0.8037190082644629,
+      "precision": 0.8276595744680851,
+      "false_discovery_rate": 0.1723404255319149,
+      "miss_rate": 0.1962809917355372
+    },
+    {
+      "gt_unit_id": "#30",
+      "accuracy": 0.9980353634577603,
+      "recall": 0.9980353634577603,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0019646365422396855
+    },
+    {
+      "gt_unit_id": "#31",
+      "accuracy": 0.9752808988764045,
+      "recall": 1.0,
+      "precision": 0.9752808988764045,
+      "false_discovery_rate": 0.024719101123595506,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#32",
+      "accuracy": 0.7574671445639187,
+      "recall": 1.0,
+      "precision": 0.7574671445639187,
+      "false_discovery_rate": 0.24253285543608125,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#33",
+      "accuracy": 0.733015494636472,
+      "recall": 1.0,
+      "precision": 0.733015494636472,
+      "false_discovery_rate": 0.266984505363528,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#34",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#35",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#36",
+      "accuracy": 0.9173913043478261,
+      "recall": 1.0,
+      "precision": 0.9173913043478261,
+      "false_discovery_rate": 0.08260869565217391,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#37",
+      "accuracy": 0.8908145580589255,
+      "recall": 1.0,
+      "precision": 0.8908145580589255,
+      "false_discovery_rate": 0.10918544194107452,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#38",
+      "accuracy": 0.9643874643874644,
+      "recall": 1.0,
+      "precision": 0.9643874643874644,
+      "false_discovery_rate": 0.03561253561253561,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#39",
+      "accuracy": 0.9966555183946488,
+      "recall": 1.0,
+      "precision": 0.9966555183946488,
+      "false_discovery_rate": 0.0033444816053511705,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#40",
+      "accuracy": 0.8753213367609255,
+      "recall": 1.0,
+      "precision": 0.8753213367609255,
+      "false_discovery_rate": 0.12467866323907455,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#41",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#42",
+      "accuracy": 0.7211221122112211,
+      "recall": 1.0,
+      "precision": 0.7211221122112211,
+      "false_discovery_rate": 0.27887788778877887,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#43",
+      "accuracy": 0.9757869249394673,
+      "recall": 1.0,
+      "precision": 0.9757869249394673,
+      "false_discovery_rate": 0.024213075060532687,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#44",
+      "accuracy": 0.5361990950226244,
+      "recall": 0.5361990950226244,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.4638009049773756
+    },
+    {
+      "gt_unit_id": "#45",
+      "accuracy": 0.811965811965812,
+      "recall": 1.0,
+      "precision": 0.811965811965812,
+      "false_discovery_rate": 0.18803418803418803,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#46",
+      "accuracy": 0,
+      "recall": 0,
+      "precision": 0,
+      "false_discovery_rate": 0,
+      "miss_rate": 0
+    },
+    {
+      "gt_unit_id": "#47",
+      "accuracy": 0.997946611909651,
+      "recall": 0.997946611909651,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.002053388090349076
+    },
+    {
+      "gt_unit_id": "#48",
+      "accuracy": 0.9885877318116976,
+      "recall": 1.0,
+      "precision": 0.9885877318116976,
+      "false_discovery_rate": 0.011412268188302425,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#49",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#50",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#51",
+      "accuracy": 0.9912126537785588,
+      "recall": 0.9964664310954063,
+      "precision": 0.9947089947089947,
+      "false_discovery_rate": 0.005291005291005291,
+      "miss_rate": 0.0035335689045936395
+    },
+    {
+      "gt_unit_id": "#52",
+      "accuracy": 0.5405759162303665,
+      "recall": 1.0,
+      "precision": 0.5405759162303665,
+      "false_discovery_rate": 0.4594240837696335,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#53",
+      "accuracy": 0.9765990639625585,
+      "recall": 1.0,
+      "precision": 0.9765990639625585,
+      "false_discovery_rate": 0.0234009360374415,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#54",
+      "accuracy": 0,
+      "recall": 0,
+      "precision": 0,
+      "false_discovery_rate": 0,
+      "miss_rate": 0
+    },
+    {
+      "gt_unit_id": "#55",
+      "accuracy": 0.6353322528363047,
+      "recall": 0.7127272727272728,
+      "precision": 0.8540305010893247,
+      "false_discovery_rate": 0.14596949891067537,
+      "miss_rate": 0.2872727272727273
+    },
+    {
+      "gt_unit_id": "#56",
+      "accuracy": 0.9920424403183024,
+      "recall": 1.0,
+      "precision": 0.9920424403183024,
+      "false_discovery_rate": 0.007957559681697613,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#57",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#58",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#59",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#60",
+      "accuracy": 0.9953917050691244,
+      "recall": 0.9953917050691244,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.004608294930875576
+    },
+    {
+      "gt_unit_id": "#61",
+      "accuracy": 0.9873150105708245,
+      "recall": 1.0,
+      "precision": 0.9873150105708245,
+      "false_discovery_rate": 0.012684989429175475,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#62",
+      "accuracy": 0.9947183098591549,
+      "recall": 0.9947183098591549,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.00528169014084507
+    },
+    {
+      "gt_unit_id": "#63",
+      "accuracy": 0,
+      "recall": 0,
+      "precision": 0,
+      "false_discovery_rate": 0,
+      "miss_rate": 0
+    },
+    {
+      "gt_unit_id": "#64",
+      "accuracy": 0.8544,
+      "recall": 1.0,
+      "precision": 0.8544,
+      "false_discovery_rate": 0.1456,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#65",
+      "accuracy": 0.9833055091819699,
+      "recall": 0.9899159663865547,
+      "precision": 0.9932546374367622,
+      "false_discovery_rate": 0.006745362563237774,
+      "miss_rate": 0.010084033613445379
+    },
+    {
+      "gt_unit_id": "#66",
+      "accuracy": 0.7211538461538461,
+      "recall": 0.9933774834437086,
+      "precision": 0.7246376811594203,
+      "false_discovery_rate": 0.2753623188405797,
+      "miss_rate": 0.006622516556291391
+    },
+    {
+      "gt_unit_id": "#67",
+      "accuracy": 0.9505766062602965,
+      "recall": 1.0,
+      "precision": 0.9505766062602965,
+      "false_discovery_rate": 0.04942339373970346,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#68",
+      "accuracy": 0.9984662576687117,
+      "recall": 1.0,
+      "precision": 0.9984662576687117,
+      "false_discovery_rate": 0.0015337423312883436,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#69",
+      "accuracy": 0.9716981132075472,
+      "recall": 1.0,
+      "precision": 0.9716981132075472,
+      "false_discovery_rate": 0.02830188679245283,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#70",
+      "accuracy": 0.8283752860411899,
+      "recall": 1.0,
+      "precision": 0.8283752860411899,
+      "false_discovery_rate": 0.17162471395881007,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#71",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#72",
+      "accuracy": 0,
+      "recall": 0,
+      "precision": 0,
+      "false_discovery_rate": 0,
+      "miss_rate": 0
+    },
+    {
+      "gt_unit_id": "#73",
+      "accuracy": 0.9863013698630136,
+      "recall": 1.0,
+      "precision": 0.9863013698630136,
+      "false_discovery_rate": 0.0136986301369863,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#74",
+      "accuracy": 0.6972704714640199,
+      "recall": 1.0,
+      "precision": 0.6972704714640199,
+      "false_discovery_rate": 0.3027295285359802,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#75",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#76",
+      "accuracy": 0.9810017271157168,
+      "recall": 1.0,
+      "precision": 0.9810017271157168,
+      "false_discovery_rate": 0.018998272884283247,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#77",
+      "accuracy": 0.994475138121547,
+      "recall": 1.0,
+      "precision": 0.994475138121547,
+      "false_discovery_rate": 0.0055248618784530384,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#78",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#79",
+      "accuracy": 0,
+      "recall": 0,
+      "precision": 0,
+      "false_discovery_rate": 0,
+      "miss_rate": 0
+    },
+    {
+      "gt_unit_id": "#80",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#81",
+      "accuracy": 0.9946380697050938,
+      "recall": 1.0,
+      "precision": 0.9946380697050938,
+      "false_discovery_rate": 0.005361930294906166,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#82",
+      "accuracy": 0.9753846153846154,
+      "recall": 0.9989495798319328,
+      "precision": 0.9763860369609856,
+      "false_discovery_rate": 0.023613963039014373,
+      "miss_rate": 0.0010504201680672268
+    },
+    {
+      "gt_unit_id": "#83",
+      "accuracy": 0.9724086502609992,
+      "recall": 1.0,
+      "precision": 0.9724086502609992,
+      "false_discovery_rate": 0.027591349739000747,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#84",
+      "accuracy": 0.9921436588103255,
+      "recall": 1.0,
+      "precision": 0.9921436588103255,
+      "false_discovery_rate": 0.007856341189674524,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#85",
+      "accuracy": 0.9970041941282205,
+      "recall": 1.0,
+      "precision": 0.9970041941282205,
+      "false_discovery_rate": 0.0029958058717795086,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#86",
+      "accuracy": 0.9995483288166215,
+      "recall": 1.0,
+      "precision": 0.9995483288166215,
+      "false_discovery_rate": 0.00045167118337850043,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#87",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#88",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#89",
+      "accuracy": 0.996875,
+      "recall": 1.0,
+      "precision": 0.996875,
+      "false_discovery_rate": 0.003125,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#90",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#91",
+      "accuracy": 0.9856306546035125,
+      "recall": 1.0,
+      "precision": 0.9856306546035125,
+      "false_discovery_rate": 0.014369345396487493,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#92",
+      "accuracy": 0.9978130125751777,
+      "recall": 1.0,
+      "precision": 0.9978130125751777,
+      "false_discovery_rate": 0.002186987424822307,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#93",
+      "accuracy": 0.9387911247130833,
+      "recall": 1.0,
+      "precision": 0.9387911247130833,
+      "false_discovery_rate": 0.061208875286916604,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#94",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#95",
+      "accuracy": 0.8066732090284593,
+      "recall": 0.8090551181102362,
+      "precision": 0.9963636363636363,
+      "false_discovery_rate": 0.0036363636363636364,
+      "miss_rate": 0.19094488188976377
+    },
+    {
+      "gt_unit_id": "#96",
+      "accuracy": 0.9739243807040417,
+      "recall": 1.0,
+      "precision": 0.9739243807040417,
+      "false_discovery_rate": 0.02607561929595828,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#97",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#98",
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "false_discovery_rate": 0.0,
+      "miss_rate": 0.0
+    },
+    {
+      "gt_unit_id": "#99",
+      "accuracy": 0.9851024208566108,
+      "recall": 1.0,
+      "precision": 0.9851024208566108,
+      "false_discovery_rate": 0.0148975791433892,
+      "miss_rate": 0.0
+    }
+  ],
+  "unit_counts": {
+    "num_gt": 100,
+    "num_sorter": 150,
+    "num_well_detected": 82,
+    "num_overmerged": 1,
+    "num_redundant": 22,
+    "num_false_positive": 29,
+    "num_bad": 55
+  },
+  "n_gt_units": 100,
+  "n_candidate_units": 150,
+  "comparison_params": {
+    "exhaustive_gt": true,
+    "delta_time_ms": 0.4,
+    "match_score": 0.5,
+    "well_detected_score": 0.8,
+    "redundant_score": 0.2,
+    "overmerged_score": 0.2,
+    "chance_score": 0.1,
+    "match_mode": "hungarian"
+  },
+  "versions": {
+    "python": "3.13.15",
+    "numcodecs": "0.15.1",
+    "spikeinterface": "0.104.8",
+    "compbench_git_sha": "4e03cee7f2850fa0a6443b2d12c471ebfa5d34a3",
+    "platform": "Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.41",
+    "libc": "glibc-2.41",
+    "torch": "2.13.0+cu130",
+    "cuda_device": "NVIDIA A100-PCIE-40GB"
+  }
+}
