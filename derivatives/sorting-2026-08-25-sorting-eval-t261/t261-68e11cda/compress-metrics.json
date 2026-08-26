@@ -1,0 +1,45 @@
+{
+  "codec": {
+    "name": "t261",
+    "lossy": true,
+    "params": {
+      "preset": "combinedPresetEEG_IndepChannel",
+      "bit_depth": 16,
+      "step_size_for_qp": 3.0,
+      "max_abs_delta_qp": null
+    },
+    "bwc": {
+      "bwc_git_sha": "34c2a2a17266a9fbe001e4cbf7c683330da10a91",
+      "encoder_version": "BWC-6.0-2-g34c2a2a",
+      "encoder_path": "/data/yoh/compression-comparisons/src/bwc/bin/release/EncoderApp",
+      "decoder_path": "/data/yoh/compression-comparisons/src/bwc/bin/release/DecoderApp",
+      "cfg_dir": "/data/yoh/compression-comparisons/src/bwc/cfg"
+    }
+  },
+  "cr": 5.9898722170099115,
+  "encode_s": 5168.773908615112,
+  "encode_xrt": 0.01934694799347363,
+  "rmse_uv": 1.4994111929959637,
+  "rmse_window_s": [
+    15.0,
+    20.0
+  ],
+  "round_trip_exact": false,
+  "expected_lossless": false,
+  "lossless_violation": false,
+  "chunk_duration_s": 1.0,
+  "duration_s": 100.0,
+  "n_channels": 384,
+  "sampling_frequency_hz": 32000.0,
+  "zarr_path": "derivatives/sorting-2026-08-25-sorting-eval-t261/t261-68e11cda/compressed.zarr",
+  "versions": {
+    "python": "3.13.15",
+    "numcodecs": "0.15.1",
+    "spikeinterface": "0.104.8",
+    "compbench_git_sha": "dd50c89c9354129dfc9f549c94efc518962eaf61",
+    "platform": "Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.41",
+    "libc": "glibc-2.41",
+    "torch": "2.13.0+cu130",
+    "cuda_device": "NVIDIA A100-PCIE-40GB"
+  }
+}
