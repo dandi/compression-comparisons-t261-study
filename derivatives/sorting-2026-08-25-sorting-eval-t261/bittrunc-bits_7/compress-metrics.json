@@ -1,0 +1,50 @@
+{
+  "codec": {
+    "name": "bittrunc",
+    "lossy": true,
+    "params": {
+      "bits": 7
+    },
+    "filters": [
+      {
+        "id": "fixedscaleoffset",
+        "scale": 0.0078125,
+        "offset": 0,
+        "dtype": "<i2",
+        "astype": "<i2"
+      }
+    ],
+    "base_codec": {
+      "cname": "zstd",
+      "clevel": 9,
+      "shuffle": "bitshuffle"
+    },
+    "rounding": "half-to-even (numcodecs FixedScaleOffset), NOT a right shift"
+  },
+  "cr": 4896.622215315095,
+  "encode_s": 52.56538527458906,
+  "encode_xrt": 1.9023926007128797,
+  "rmse_uv": 7.084774154688948,
+  "rmse_window_s": [
+    15.0,
+    20.0
+  ],
+  "round_trip_exact": false,
+  "expected_lossless": false,
+  "lossless_violation": false,
+  "chunk_duration_s": 1.0,
+  "duration_s": 100.0,
+  "n_channels": 384,
+  "sampling_frequency_hz": 32000.0,
+  "zarr_path": "derivatives/sorting-2026-08-25-sorting-eval-t261/bittrunc-bits_7/compressed.zarr",
+  "versions": {
+    "python": "3.13.15",
+    "numcodecs": "0.15.1",
+    "spikeinterface": "0.104.8",
+    "compbench_git_sha": "099b53882bb8bab4bc4956b36bdbadf7f8c3676d",
+    "platform": "Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.41",
+    "libc": "glibc-2.41",
+    "torch": "2.13.0+cu130",
+    "cuda_device": "NVIDIA A100-PCIE-40GB"
+  }
+}
