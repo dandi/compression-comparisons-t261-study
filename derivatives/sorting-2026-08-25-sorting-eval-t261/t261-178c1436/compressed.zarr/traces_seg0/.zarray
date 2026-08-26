@@ -1,0 +1,23 @@
+{
+    "chunks": [
+        32000,
+        384
+    ],
+    "compressor": {
+        "bit_depth": 16,
+        "extra_args": [],
+        "id": "t261",
+        "max_abs_delta_qp": null,
+        "preset": "combinedPresetEEG_IndepChannel",
+        "step_size_for_qp": 2.0
+    },
+    "dtype": "<i2",
+    "fill_value": 0,
+    "filters": null,
+    "order": "C",
+    "shape": [
+        3200000,
+        384
+    ],
+    "zarr_format": 2
+}
