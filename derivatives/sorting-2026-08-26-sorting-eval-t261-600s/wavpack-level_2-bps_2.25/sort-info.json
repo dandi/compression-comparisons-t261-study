@@ -1,0 +1,27 @@
+{
+  "sorter": "kilosort4",
+  "sorter_version": "4.1.7",
+  "sorter_params": {},
+  "presort": {
+    "bandpass_hz": [
+      300.0,
+      6000.0
+    ],
+    "common_reference": false
+  },
+  "n_units": 255,
+  "n_spikes": 651961,
+  "sort_s": 1052.5887835808098,
+  "sorting_path": "derivatives/sorting-2026-08-26-sorting-eval-t261-600s/wavpack-level_2-bps_2.25/sorting",
+  "zarr_path": "derivatives/sorting-2026-08-26-sorting-eval-t261-600s/wavpack-level_2-bps_2.25/compressed.zarr",
+  "versions": {
+    "python": "3.13.15",
+    "numcodecs": "0.15.1",
+    "spikeinterface": "0.104.8",
+    "compbench_git_sha": "f473fcd6e8e7a26e9a9271925954ce5ede79d2af",
+    "platform": "Linux-6.12.57+deb13-amd64-x86_64-with-glibc2.41",
+    "libc": "glibc-2.41",
+    "torch": "2.13.0+cu130",
+    "cuda_device": "NVIDIA A100-PCIE-40GB"
+  }
+}
