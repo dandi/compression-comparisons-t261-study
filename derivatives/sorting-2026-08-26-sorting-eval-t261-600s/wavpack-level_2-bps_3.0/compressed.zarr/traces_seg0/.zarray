@@ -1,0 +1,24 @@
+{
+    "chunks": [
+        32000,
+        384
+    ],
+    "compressor": {
+        "bps": 3.0,
+        "dynamic_noise_shaping": true,
+        "id": "wavpack",
+        "level": 2,
+        "num_decoding_threads": 1,
+        "num_encoding_threads": 1,
+        "shaping_weight": 0.0
+    },
+    "dtype": "<i2",
+    "fill_value": 0,
+    "filters": null,
+    "order": "C",
+    "shape": [
+        19200000,
+        384
+    ],
+    "zarr_format": 2
+}
