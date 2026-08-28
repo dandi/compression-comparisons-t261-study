@@ -1,0 +1,788 @@
+2026-08-28 16:27:27,721 kilosort.run_kilosort INFO      
+2026-08-28 16:27:27,721 kilosort.run_kilosort INFO     Computing preprocessing variables.
+2026-08-28 16:27:27,721 kilosort.run_kilosort INFO     ----------------------------------------
+2026-08-28 16:27:27,897 kilosort.run_kilosort INFO     N samples: 19200000
+2026-08-28 16:27:27,897 kilosort.run_kilosort INFO     N seconds: 600.0
+2026-08-28 16:27:27,897 kilosort.run_kilosort INFO     N batches: 320
+2026-08-28 16:27:28,590 kilosort.run_kilosort INFO     Preprocessing filters computed in 0.87s; total 0.87s
+2026-08-28 16:27:28,590 kilosort.run_kilosort DEBUG    hp_filter shape: torch.Size([30122])
+2026-08-28 16:27:28,590 kilosort.run_kilosort DEBUG    whiten_mat shape: torch.Size([384, 384])
+2026-08-28 16:27:28,651 kilosort.run_kilosort DEBUG    First batch min, max: (np.float32(-138.55559), np.float32(138.55557))
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO      
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     Resource usage after preprocessing
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     CPU usage:     9.10 %
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     Mem used:      7.40 %     |      74.13 GB
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     Mem avail:    933.38 / 1007.51 GB
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     ------------------------------------------------------
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     GPU memory:    5.66 %     |      2.23   /    39.49 GB
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     Allocated:     0.02 %     |      0.01   /    39.49 GB
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     Max alloc:     3.31 %     |      1.31   /    39.49 GB
+2026-08-28 16:27:28,652 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:27:28,653 kilosort.run_kilosort INFO      
+2026-08-28 16:27:28,653 kilosort.run_kilosort INFO     Computing drift correction.
+2026-08-28 16:27:28,653 kilosort.run_kilosort INFO     ----------------------------------------
+2026-08-28 16:27:28,653 kilosort.spikedetect INFO     Re-computing universal templates from data.
+2026-08-28 16:27:29,393 kilosort.spikedetect INFO     Number of universal templates: 1532
+2026-08-28 16:27:29,478 kilosort.spikedetect INFO     Detecting spikes...
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG     
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    Batch 0 of 319 (0.0%)
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    ********************************************************
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    CPU usage:    24.50 %
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    Mem used:      7.40 %     |      74.25 GB
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    Mem avail:    933.26 / 1007.51 GB
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    ------------------------------------------------------
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    GPU memory:    5.66 %     |      2.23   /    39.49 GB
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    Max alloc:     3.31 %     |      1.31   /    39.49 GB
+2026-08-28 16:27:29,479 kilosort.spikedetect DEBUG    ********************************************************
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG     
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    Batch 319 of 319 (99.7%)
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    ********************************************************
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    CPU usage:    11.40 %
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    Mem used:      7.40 %     |      74.28 GB
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    Mem avail:    933.23 / 1007.51 GB
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    ------------------------------------------------------
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    GPU memory:   14.60 %     |      5.76   /    39.49 GB
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    Allocated:     0.25 %     |      0.10   /    39.49 GB
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    Max alloc:     8.33 %     |      3.29   /    39.49 GB
+2026-08-28 16:28:46,814 kilosort.spikedetect DEBUG    ********************************************************
+2026-08-28 16:28:46,982 kilosort.run_kilosort INFO     drift computed in 78.33s; total 79.26s
+2026-08-28 16:28:46,982 kilosort.run_kilosort DEBUG    st shape: (92014, 6)
+2026-08-28 16:28:46,982 kilosort.run_kilosort DEBUG    yblk shape: (1,)
+2026-08-28 16:28:46,982 kilosort.run_kilosort DEBUG    dshift shape: (320, 1)
+2026-08-28 16:28:46,982 kilosort.run_kilosort DEBUG    iKxx shape: torch.Size([384, 384])
+2026-08-28 16:28:46,982 kilosort.run_kilosort DEBUG    
+
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |  11209 KiB |   3370 MiB |  27689 GiB |  27689 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |  11209 KiB |   3370 MiB |  27689 GiB |  27689 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |  11208 KiB |   3370 MiB |  27669 GiB |  27669 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   5352 MiB |   5352 MiB |   5352 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory |  37942 KiB |   1855 MiB |   8552 GiB |   8552 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |       9    |      37    |  223965    |  223956    |
+|---------------------------------------------------------------------------|
+| Active allocs         |       9    |      37    |  223965    |  223956    |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |      17    |      17    |      17    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |       8    |      25    |  100888    |  100880    |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+
+
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO      
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     Resource usage after drift correction
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     CPU usage:     0.00 %
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     Mem used:      7.40 %     |      74.35 GB
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     Mem avail:    933.17 / 1007.51 GB
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     ------------------------------------------------------
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     GPU memory:   14.60 %     |      5.76   /    39.49 GB
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     Max alloc:     8.33 %     |      3.29   /    39.49 GB
+2026-08-28 16:28:46,983 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:28:50,267 kilosort.run_kilosort INFO      
+2026-08-28 16:28:50,267 kilosort.run_kilosort INFO     Extracting spikes using templates
+2026-08-28 16:28:50,267 kilosort.run_kilosort INFO     ----------------------------------------
+2026-08-28 16:28:50,267 kilosort.spikedetect INFO     Re-computing universal templates from data.
+2026-08-28 16:28:50,997 kilosort.spikedetect INFO     Number of universal templates: 1532
+2026-08-28 16:28:51,074 kilosort.spikedetect INFO     Detecting spikes...
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG     
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    Batch 0 of 319 (0.0%)
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    ********************************************************
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    CPU usage:    12.50 %
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    Mem used:      7.40 %     |      74.52 GB
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    Mem avail:    932.99 / 1007.51 GB
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    ------------------------------------------------------
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    GPU memory:   14.60 %     |      5.76   /    39.49 GB
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    Max alloc:     3.31 %     |      1.31   /    39.49 GB
+2026-08-28 16:28:51,075 kilosort.spikedetect DEBUG    ********************************************************
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG     
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    Batch 319 of 319 (99.7%)
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    ********************************************************
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    CPU usage:    11.20 %
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    Mem used:      7.40 %     |      74.58 GB
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    Mem avail:    932.93 / 1007.51 GB
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    ------------------------------------------------------
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    Allocated:     0.25 %     |      0.10   /    39.49 GB
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    Max alloc:     8.34 %     |      3.29   /    39.49 GB
+2026-08-28 16:30:09,749 kilosort.spikedetect DEBUG    ********************************************************
+2026-08-28 16:30:09,749 kilosort.run_kilosort INFO     92000 spikes extracted in 79.48s; total 162.03s
+2026-08-28 16:30:09,750 kilosort.run_kilosort DEBUG    st0 shape: (92000, 6)
+2026-08-28 16:30:09,750 kilosort.run_kilosort DEBUG    tF shape: torch.Size([92000, 10, 6])
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO      
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     Resource usage after spike detect (univ)
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     CPU usage:     0.00 %
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     Mem used:      7.40 %     |      74.58 GB
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     Mem avail:    932.93 / 1007.51 GB
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     ------------------------------------------------------
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     Max alloc:     8.34 %     |      3.29   /    39.49 GB
+2026-08-28 16:30:09,750 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:30:09,755 kilosort.run_kilosort DEBUG    
+2026-08-28 16:30:09,755 kilosort.run_kilosort DEBUG    --------------------
+2026-08-28 16:30:09,755 kilosort.run_kilosort DEBUG    Process thread count: 83
+2026-08-28 16:30:09,755 kilosort.run_kilosort DEBUG    num torch threads: 32
+2026-08-28 16:30:09,755 kilosort.run_kilosort DEBUG    --------------------
+
+2026-08-28 16:30:09,756 kilosort.run_kilosort INFO      
+2026-08-28 16:30:09,756 kilosort.run_kilosort INFO     First clustering
+2026-08-28 16:30:09,756 kilosort.run_kilosort INFO     ----------------------------------------
+2026-08-28 16:30:09,870 kilosort.clustering_qr DEBUG    Center 0 | Xd shape: torch.Size([4, 60]) | ntemp: 16
+2026-08-28 16:30:09,934 kilosort.clustering_qr DEBUG    Center 1 | Xd shape: torch.Size([2386, 84]) | ntemp: 16
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG     
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    Cluster center: 9 (10/96)
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    CPU usage:    66.70 %
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    Mem used:      7.40 %     |      74.86 GB
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    Mem avail:    932.65 / 1007.51 GB
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    Max alloc:     0.04 %     |      0.02   /    39.49 GB
+2026-08-28 16:30:10,526 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:10,614 kilosort.clustering_qr DEBUG    Center 11 | Xd shape: torch.Size([56, 90]) | ntemp: 16
+2026-08-28 16:30:10,725 kilosort.clustering_qr DEBUG    Center 14 | Xd shape: torch.Size([157, 90]) | ntemp: 16
+2026-08-28 16:30:10,885 kilosort.clustering_qr DEBUG    Center 15 | Xd shape: torch.Size([5311, 90]) | ntemp: 16
+2026-08-28 16:30:11,525 kilosort.clustering_qr DEBUG    Center 16 | Xd shape: torch.Size([3393, 90]) | ntemp: 16
+2026-08-28 16:30:11,970 kilosort.clustering_qr DEBUG    Center 17 | Xd shape: torch.Size([8620, 90]) | ntemp: 16
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG     
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    Cluster center: 19 (20/96)
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    CPU usage:    73.70 %
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    Mem used:      7.40 %     |      75.01 GB
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    Mem avail:    932.51 / 1007.51 GB
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    Max alloc:     0.09 %     |      0.03   /    39.49 GB
+2026-08-28 16:30:12,458 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:12,593 kilosort.clustering_qr DEBUG    Center 22 | Xd shape: torch.Size([2950, 90]) | ntemp: 16
+2026-08-28 16:30:13,034 kilosort.clustering_qr DEBUG    Center 23 | Xd shape: torch.Size([195, 90]) | ntemp: 16
+2026-08-28 16:30:13,333 kilosort.clustering_qr DEBUG    Center 24 | Xd shape: torch.Size([2639, 90]) | ntemp: 16
+2026-08-28 16:30:13,686 kilosort.clustering_qr DEBUG    Center 25 | Xd shape: torch.Size([29, 90]) | ntemp: 16
+2026-08-28 16:30:13,885 kilosort.clustering_qr DEBUG    Center 28 | Xd shape: torch.Size([2654, 90]) | ntemp: 16
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG     
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    Cluster center: 29 (30/96)
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    CPU usage:    70.50 %
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    Mem used:      7.40 %     |      75.01 GB
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    Mem avail:    932.50 / 1007.51 GB
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    Max alloc:     0.09 %     |      0.03   /    39.49 GB
+2026-08-28 16:30:14,214 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:14,293 kilosort.clustering_qr DEBUG    Center 29 | Xd shape: torch.Size([976, 90]) | ntemp: 16
+2026-08-28 16:30:14,350 kilosort.clustering_qr DEBUG    Center 30 | Xd shape: torch.Size([2, 90]) | ntemp: 16
+2026-08-28 16:30:14,437 kilosort.clustering_qr DEBUG    Center 31 | Xd shape: torch.Size([369, 90]) | ntemp: 16
+2026-08-28 16:30:14,565 kilosort.clustering_qr DEBUG    Center 32 | Xd shape: torch.Size([3166, 90]) | ntemp: 16
+2026-08-28 16:30:15,041 kilosort.clustering_qr DEBUG    Center 33 | Xd shape: torch.Size([1053, 90]) | ntemp: 16
+2026-08-28 16:30:15,426 kilosort.clustering_qr DEBUG    Center 34 | Xd shape: torch.Size([1097, 90]) | ntemp: 16
+2026-08-28 16:30:15,699 kilosort.clustering_qr DEBUG    Center 35 | Xd shape: torch.Size([14, 90]) | ntemp: 16
+2026-08-28 16:30:15,837 kilosort.clustering_qr DEBUG    Center 38 | Xd shape: torch.Size([625, 90]) | ntemp: 16
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG     
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    Cluster center: 39 (40/96)
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    CPU usage:    69.80 %
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    Mem used:      7.40 %     |      74.92 GB
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    Mem avail:    932.59 / 1007.51 GB
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    Max alloc:     0.09 %     |      0.03   /    39.49 GB
+2026-08-28 16:30:15,862 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:15,994 kilosort.clustering_qr DEBUG    Center 39 | Xd shape: torch.Size([2742, 90]) | ntemp: 16
+2026-08-28 16:30:16,370 kilosort.clustering_qr DEBUG    Center 40 | Xd shape: torch.Size([224, 90]) | ntemp: 16
+2026-08-28 16:30:16,445 kilosort.clustering_qr DEBUG    Center 41 | Xd shape: torch.Size([98, 90]) | ntemp: 16
+2026-08-28 16:30:16,513 kilosort.clustering_qr DEBUG    Center 42 | Xd shape: torch.Size([103, 90]) | ntemp: 16
+2026-08-28 16:30:16,737 kilosort.clustering_qr DEBUG    Center 43 | Xd shape: torch.Size([2823, 90]) | ntemp: 16
+2026-08-28 16:30:17,137 kilosort.clustering_qr DEBUG    Center 44 | Xd shape: torch.Size([186, 90]) | ntemp: 16
+2026-08-28 16:30:17,186 kilosort.clustering_qr DEBUG    Center 45 | Xd shape: torch.Size([4, 90]) | ntemp: 16
+2026-08-28 16:30:17,250 kilosort.clustering_qr DEBUG    Center 47 | Xd shape: torch.Size([4, 90]) | ntemp: 16
+2026-08-28 16:30:17,337 kilosort.clustering_qr DEBUG    Center 48 | Xd shape: torch.Size([2642, 90]) | ntemp: 16
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG     
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    Cluster center: 49 (50/96)
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    CPU usage:    73.10 %
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    Mem used:      7.40 %     |      74.92 GB
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    Mem avail:    932.60 / 1007.51 GB
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    Max alloc:     0.09 %     |      0.03   /    39.49 GB
+2026-08-28 16:30:17,710 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:17,773 kilosort.clustering_qr DEBUG    Center 49 | Xd shape: torch.Size([1541, 90]) | ntemp: 16
+2026-08-28 16:30:18,157 kilosort.clustering_qr DEBUG    Center 50 | Xd shape: torch.Size([2009, 90]) | ntemp: 16
+2026-08-28 16:30:18,526 kilosort.clustering_qr DEBUG    Center 52 | Xd shape: torch.Size([4, 90]) | ntemp: 16
+2026-08-28 16:30:18,597 kilosort.clustering_qr DEBUG    Center 53 | Xd shape: torch.Size([1614, 90]) | ntemp: 16
+2026-08-28 16:30:18,961 kilosort.clustering_qr DEBUG    Center 54 | Xd shape: torch.Size([2341, 90]) | ntemp: 16
+2026-08-28 16:30:19,311 kilosort.clustering_qr DEBUG    Center 55 | Xd shape: torch.Size([2, 90]) | ntemp: 16
+2026-08-28 16:30:19,359 kilosort.clustering_qr DEBUG    Center 56 | Xd shape: torch.Size([4, 90]) | ntemp: 16
+2026-08-28 16:30:19,400 kilosort.clustering_qr DEBUG    Center 57 | Xd shape: torch.Size([6, 90]) | ntemp: 16
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG     
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    Cluster center: 59 (60/96)
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    CPU usage:    60.70 %
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    Mem used:      7.40 %     |      74.97 GB
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    Mem avail:    932.55 / 1007.51 GB
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    Max alloc:     0.09 %     |      0.03   /    39.49 GB
+2026-08-28 16:30:19,430 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:19,519 kilosort.clustering_qr DEBUG    Center 61 | Xd shape: torch.Size([65, 90]) | ntemp: 16
+2026-08-28 16:30:19,605 kilosort.clustering_qr DEBUG    Center 62 | Xd shape: torch.Size([8089, 90]) | ntemp: 16
+2026-08-28 16:30:20,090 kilosort.clustering_qr DEBUG    Center 63 | Xd shape: torch.Size([24, 90]) | ntemp: 16
+2026-08-28 16:30:20,178 kilosort.clustering_qr DEBUG    Center 66 | Xd shape: torch.Size([16, 90]) | ntemp: 16
+2026-08-28 16:30:20,401 kilosort.clustering_qr DEBUG    Center 67 | Xd shape: torch.Size([3293, 90]) | ntemp: 16
+2026-08-28 16:30:20,809 kilosort.clustering_qr DEBUG    Center 68 | Xd shape: torch.Size([422, 90]) | ntemp: 16
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG     
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    Cluster center: 69 (70/96)
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    CPU usage:    78.30 %
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    Mem used:      7.40 %     |      74.91 GB
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    Mem avail:    932.60 / 1007.51 GB
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    Max alloc:     0.09 %     |      0.03   /    39.49 GB
+2026-08-28 16:30:20,834 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:20,913 kilosort.clustering_qr DEBUG    Center 69 | Xd shape: torch.Size([868, 90]) | ntemp: 16
+2026-08-28 16:30:21,049 kilosort.clustering_qr DEBUG    Center 70 | Xd shape: torch.Size([1822, 90]) | ntemp: 16
+2026-08-28 16:30:21,437 kilosort.clustering_qr DEBUG    Center 73 | Xd shape: torch.Size([2235, 90]) | ntemp: 16
+2026-08-28 16:30:21,849 kilosort.clustering_qr DEBUG    Center 74 | Xd shape: torch.Size([5501, 90]) | ntemp: 16
+2026-08-28 16:30:22,401 kilosort.clustering_qr DEBUG    Center 75 | Xd shape: torch.Size([1537, 90]) | ntemp: 16
+2026-08-28 16:30:22,757 kilosort.clustering_qr DEBUG    Center 76 | Xd shape: torch.Size([87, 90]) | ntemp: 16
+2026-08-28 16:30:22,830 kilosort.clustering_qr DEBUG    Center 78 | Xd shape: torch.Size([32, 90]) | ntemp: 16
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG     
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    Cluster center: 79 (80/96)
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    CPU usage:    68.10 %
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    Mem used:      7.40 %     |      74.90 GB
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    Mem avail:    932.61 / 1007.51 GB
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    Max alloc:     0.09 %     |      0.03   /    39.49 GB
+2026-08-28 16:30:22,838 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:22,894 kilosort.clustering_qr DEBUG    Center 79 | Xd shape: torch.Size([101, 90]) | ntemp: 16
+2026-08-28 16:30:23,005 kilosort.clustering_qr DEBUG    Center 80 | Xd shape: torch.Size([2064, 90]) | ntemp: 16
+2026-08-28 16:30:23,406 kilosort.clustering_qr DEBUG    Center 82 | Xd shape: torch.Size([14, 90]) | ntemp: 16
+2026-08-28 16:30:23,446 kilosort.clustering_qr DEBUG    Center 83 | Xd shape: torch.Size([10, 90]) | ntemp: 16
+2026-08-28 16:30:23,487 kilosort.clustering_qr DEBUG    Center 84 | Xd shape: torch.Size([11, 90]) | ntemp: 16
+2026-08-28 16:30:23,589 kilosort.clustering_qr DEBUG    Center 86 | Xd shape: torch.Size([3637, 90]) | ntemp: 16
+2026-08-28 16:30:23,966 kilosort.clustering_qr DEBUG    Center 88 | Xd shape: torch.Size([30, 90]) | ntemp: 16
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG     
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    Cluster center: 89 (90/96)
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    CPU usage:    72.70 %
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    Mem used:      7.40 %     |      74.94 GB
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    Mem avail:    932.58 / 1007.51 GB
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    Max alloc:     0.09 %     |      0.03   /    39.49 GB
+2026-08-28 16:30:23,974 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:30:24,181 kilosort.clustering_qr DEBUG    Center 89 | Xd shape: torch.Size([2362, 90]) | ntemp: 16
+2026-08-28 16:30:24,585 kilosort.clustering_qr DEBUG    Center 90 | Xd shape: torch.Size([538, 90]) | ntemp: 16
+2026-08-28 16:30:24,681 kilosort.clustering_qr DEBUG    Center 91 | Xd shape: torch.Size([267, 90]) | ntemp: 16
+2026-08-28 16:30:24,722 kilosort.clustering_qr DEBUG    Center 92 | Xd shape: torch.Size([4, 90]) | ntemp: 16
+2026-08-28 16:30:24,841 kilosort.clustering_qr DEBUG    Center 93 | Xd shape: torch.Size([2622, 90]) | ntemp: 16
+2026-08-28 16:30:25,255 kilosort.clustering_qr DEBUG    Center 94 | Xd shape: torch.Size([7, 78]) | ntemp: 16
+2026-08-28 16:30:25,429 kilosort.clustering_qr DEBUG    Center 95 | Xd shape: torch.Size([4299, 60]) | ntemp: 12
+2026-08-28 16:30:26,003 kilosort.run_kilosort INFO     285 clusters found, in 16.25s; total 178.28s
+2026-08-28 16:30:26,004 kilosort.run_kilosort DEBUG    clu shape: (92000,)
+2026-08-28 16:30:26,004 kilosort.run_kilosort DEBUG    Wall shape: torch.Size([285, 384, 6])
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO      
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     Resource usage after first clustering
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     CPU usage:     0.00 %
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     Mem used:      7.40 %     |      74.94 GB
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     Mem avail:    932.57 / 1007.51 GB
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     ------------------------------------------------------
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     Max alloc:     0.85 %     |      0.34   /    39.49 GB
+2026-08-28 16:30:26,004 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:30:26,008 kilosort.run_kilosort DEBUG    
+2026-08-28 16:30:26,008 kilosort.run_kilosort DEBUG    --------------------
+2026-08-28 16:30:26,008 kilosort.run_kilosort DEBUG    Process thread count: 99
+2026-08-28 16:30:26,008 kilosort.run_kilosort DEBUG    num torch threads: 32
+2026-08-28 16:30:26,008 kilosort.run_kilosort DEBUG    --------------------
+
+2026-08-28 16:30:26,008 kilosort.run_kilosort INFO      
+2026-08-28 16:30:26,008 kilosort.run_kilosort INFO     Extracting spikes using cluster waveforms
+2026-08-28 16:30:26,008 kilosort.run_kilosort INFO     ----------------------------------------
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG     
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    Batch 0
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    ********************************************************
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    CPU usage:    55.40 %
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    Mem used:      7.50 %     |      75.10 GB
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    Mem avail:    932.41 / 1007.51 GB
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    ------------------------------------------------------
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    GPU memory:   14.60 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    Allocated:     0.07 %     |      0.03   /    39.49 GB
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    Max alloc:     0.10 %     |      0.04   /    39.49 GB
+2026-08-28 16:30:26,023 kilosort.template_matching DEBUG    ********************************************************
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG     
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    Batch 100
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    ********************************************************
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    CPU usage:    25.00 %
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    Mem used:      7.50 %     |      75.06 GB
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    Mem avail:    932.45 / 1007.51 GB
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    ------------------------------------------------------
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    Allocated:     0.51 %     |      0.20   /    39.49 GB
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    Max alloc:     3.58 %     |      1.41   /    39.49 GB
+2026-08-28 16:30:39,450 kilosort.template_matching DEBUG    ********************************************************
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG     
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    Batch 200
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    ********************************************************
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    CPU usage:    28.60 %
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    Mem used:      7.50 %     |      75.21 GB
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    Mem avail:    932.31 / 1007.51 GB
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    ------------------------------------------------------
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    Allocated:     0.51 %     |      0.20   /    39.49 GB
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    Max alloc:     3.58 %     |      1.41   /    39.49 GB
+2026-08-28 16:30:52,554 kilosort.template_matching DEBUG    ********************************************************
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG     
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    Batch 300
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    ********************************************************
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    CPU usage:    26.00 %
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    Mem used:      7.50 %     |      75.15 GB
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    Mem avail:    932.36 / 1007.51 GB
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    ------------------------------------------------------
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    Allocated:     0.51 %     |      0.20   /    39.49 GB
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    Max alloc:     3.58 %     |      1.41   /    39.49 GB
+2026-08-28 16:31:05,738 kilosort.template_matching DEBUG    ********************************************************
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG     
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    Batch 319
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    ********************************************************
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    CPU usage:    26.80 %
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    Mem used:      7.50 %     |      75.15 GB
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    Mem avail:    932.36 / 1007.51 GB
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    ------------------------------------------------------
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    Allocated:     0.51 %     |      0.20   /    39.49 GB
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    Max alloc:     3.58 %     |      1.41   /    39.49 GB
+2026-08-28 16:31:08,274 kilosort.template_matching DEBUG    ********************************************************
+2026-08-28 16:31:08,316 kilosort.run_kilosort DEBUG    
+2026-08-28 16:31:08,316 kilosort.run_kilosort DEBUG    --------------------
+2026-08-28 16:31:08,316 kilosort.run_kilosort DEBUG    Process thread count: 99
+2026-08-28 16:31:08,316 kilosort.run_kilosort DEBUG    num torch threads: 32
+2026-08-28 16:31:08,316 kilosort.run_kilosort DEBUG    --------------------
+
+2026-08-28 16:31:08,317 kilosort.run_kilosort INFO     510032 spikes extracted in 42.31s; total 220.60s
+2026-08-28 16:31:08,317 kilosort.run_kilosort DEBUG    st shape: (510032, 3)
+2026-08-28 16:31:08,317 kilosort.run_kilosort DEBUG    tF shape: torch.Size([510032, 10, 6])
+2026-08-28 16:31:08,317 kilosort.run_kilosort DEBUG    iCC shape: torch.Size([10, 384])
+2026-08-28 16:31:08,317 kilosort.run_kilosort DEBUG    iU shape: torch.Size([193])
+2026-08-28 16:31:08,317 kilosort.run_kilosort DEBUG    
+
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |  12982 KiB |   1448 MiB |  60802 GiB |  60802 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |  12982 KiB |   1448 MiB |  60802 GiB |  60802 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |  12980 KiB |   1448 MiB |  60752 GiB |  60752 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   5356 MiB |   5356 MiB |   5356 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory |  36169 KiB | 569267 KiB |  21815 GiB |  21815 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |      13    |      44    |    2024 K  |    2024 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |      13    |      44    |    2024 K  |    2024 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |      19    |      19    |      19    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      12    |      25    |     836 K  |     836 K  |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+
+
+2026-08-28 16:31:08,317 kilosort.run_kilosort INFO      
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     Resource usage after spike detect (learned)
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     CPU usage:    100.00 %
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     Mem used:      7.40 %     |      75.05 GB
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     Mem avail:    932.46 / 1007.51 GB
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     ------------------------------------------------------
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     Max alloc:     3.58 %     |      1.41   /    39.49 GB
+2026-08-28 16:31:08,318 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:31:09,715 kilosort.run_kilosort INFO      
+2026-08-28 16:31:09,715 kilosort.run_kilosort INFO     Final clustering
+2026-08-28 16:31:09,715 kilosort.run_kilosort INFO     ----------------------------------------
+2026-08-28 16:31:09,789 kilosort.clustering_qr DEBUG    Center 0 | Xd shape: torch.Size([279, 60]) | ntemp: 1
+2026-08-28 16:31:09,901 kilosort.clustering_qr DEBUG    Center 1 | Xd shape: torch.Size([4784, 60]) | ntemp: 3
+2026-08-28 16:31:11,925 kilosort.clustering_qr DEBUG    Center 11 | Xd shape: torch.Size([1147, 60]) | ntemp: 1
+2026-08-28 16:31:12,221 kilosort.clustering_qr DEBUG    Center 14 | Xd shape: torch.Size([74, 60]) | ntemp: 1
+2026-08-28 16:31:12,373 kilosort.clustering_qr DEBUG    Center 15 | Xd shape: torch.Size([19088, 72]) | ntemp: 5
+2026-08-28 16:31:13,365 kilosort.clustering_qr DEBUG    Center 16 | Xd shape: torch.Size([12154, 72]) | ntemp: 7
+2026-08-28 16:31:14,085 kilosort.clustering_qr DEBUG    Center 17 | Xd shape: torch.Size([8902, 60]) | ntemp: 2
+2026-08-28 16:31:14,525 kilosort.clustering_qr DEBUG    Center 22 | Xd shape: torch.Size([6995, 72]) | ntemp: 4
+2026-08-28 16:31:15,333 kilosort.clustering_qr DEBUG    Center 24 | Xd shape: torch.Size([35999, 72]) | ntemp: 8
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG     
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    Cluster center: 25 (10/61)
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    CPU usage:    49.40 %
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    Mem used:      7.50 %     |      75.09 GB
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    Mem avail:    932.43 / 1007.51 GB
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    Max alloc:     0.27 %     |      0.11   /    39.49 GB
+2026-08-28 16:31:16,282 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:16,353 kilosort.clustering_qr DEBUG    Center 25 | Xd shape: torch.Size([8569, 60]) | ntemp: 1
+2026-08-28 16:31:16,909 kilosort.clustering_qr DEBUG    Center 28 | Xd shape: torch.Size([16274, 72]) | ntemp: 9
+2026-08-28 16:31:17,601 kilosort.clustering_qr DEBUG    Center 29 | Xd shape: torch.Size([19457, 60]) | ntemp: 1
+2026-08-28 16:31:18,705 kilosort.clustering_qr DEBUG    Center 30 | Xd shape: torch.Size([141, 60]) | ntemp: 1
+2026-08-28 16:31:18,793 kilosort.clustering_qr DEBUG    Center 31 | Xd shape: torch.Size([16620, 60]) | ntemp: 1
+2026-08-28 16:31:19,753 kilosort.clustering_qr DEBUG    Center 32 | Xd shape: torch.Size([17390, 72]) | ntemp: 4
+2026-08-28 16:31:20,677 kilosort.clustering_qr DEBUG    Center 33 | Xd shape: torch.Size([7921, 60]) | ntemp: 3
+2026-08-28 16:31:21,169 kilosort.clustering_qr DEBUG    Center 34 | Xd shape: torch.Size([10958, 72]) | ntemp: 3
+2026-08-28 16:31:21,981 kilosort.clustering_qr DEBUG    Center 35 | Xd shape: torch.Size([675, 60]) | ntemp: 1
+2026-08-28 16:31:22,081 kilosort.clustering_qr DEBUG    Center 38 | Xd shape: torch.Size([20179, 60]) | ntemp: 1
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG     
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    Cluster center: 39 (20/61)
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    CPU usage:    77.20 %
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    Mem used:      7.50 %     |      75.14 GB
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    Mem avail:    932.37 / 1007.51 GB
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    Max alloc:     0.27 %     |      0.11   /    39.49 GB
+2026-08-28 16:31:22,966 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:23,101 kilosort.clustering_qr DEBUG    Center 39 | Xd shape: torch.Size([14183, 72]) | ntemp: 5
+2026-08-28 16:31:23,877 kilosort.clustering_qr DEBUG    Center 40 | Xd shape: torch.Size([7106, 60]) | ntemp: 3
+2026-08-28 16:31:24,325 kilosort.clustering_qr DEBUG    Center 41 | Xd shape: torch.Size([3553, 60]) | ntemp: 1
+2026-08-28 16:31:24,665 kilosort.clustering_qr DEBUG    Center 42 | Xd shape: torch.Size([1025, 60]) | ntemp: 1
+2026-08-28 16:31:25,105 kilosort.clustering_qr DEBUG    Center 43 | Xd shape: torch.Size([30684, 72]) | ntemp: 10
+2026-08-28 16:31:26,205 kilosort.clustering_qr DEBUG    Center 44 | Xd shape: torch.Size([3431, 60]) | ntemp: 2
+2026-08-28 16:31:26,525 kilosort.clustering_qr DEBUG    Center 47 | Xd shape: torch.Size([281, 60]) | ntemp: 1
+2026-08-28 16:31:26,709 kilosort.clustering_qr DEBUG    Center 48 | Xd shape: torch.Size([7921, 72]) | ntemp: 7
+2026-08-28 16:31:27,373 kilosort.clustering_qr DEBUG    Center 49 | Xd shape: torch.Size([7253, 60]) | ntemp: 2
+2026-08-28 16:31:28,001 kilosort.clustering_qr DEBUG    Center 50 | Xd shape: torch.Size([9492, 72]) | ntemp: 3
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG     
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    Cluster center: 52 (30/61)
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    CPU usage:    72.30 %
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    Mem used:      7.50 %     |      75.19 GB
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    Mem avail:    932.32 / 1007.51 GB
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    Max alloc:     0.27 %     |      0.11   /    39.49 GB
+2026-08-28 16:31:28,582 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:28,613 kilosort.clustering_qr DEBUG    Center 52 | Xd shape: torch.Size([36, 60]) | ntemp: 1
+2026-08-28 16:31:28,717 kilosort.clustering_qr DEBUG    Center 53 | Xd shape: torch.Size([2123, 60]) | ntemp: 3
+2026-08-28 16:31:29,069 kilosort.clustering_qr DEBUG    Center 54 | Xd shape: torch.Size([4611, 72]) | ntemp: 2
+2026-08-28 16:31:29,537 kilosort.clustering_qr DEBUG    Center 55 | Xd shape: torch.Size([146, 60]) | ntemp: 1
+2026-08-28 16:31:29,585 kilosort.clustering_qr DEBUG    Center 56 | Xd shape: torch.Size([36, 60]) | ntemp: 1
+2026-08-28 16:31:29,649 kilosort.clustering_qr DEBUG    Center 57 | Xd shape: torch.Size([433, 60]) | ntemp: 1
+2026-08-28 16:31:29,737 kilosort.clustering_qr DEBUG    Center 61 | Xd shape: torch.Size([3298, 60]) | ntemp: 1
+2026-08-28 16:31:30,161 kilosort.clustering_qr DEBUG    Center 62 | Xd shape: torch.Size([11285, 72]) | ntemp: 4
+2026-08-28 16:31:30,673 kilosort.clustering_qr DEBUG    Center 63 | Xd shape: torch.Size([582, 60]) | ntemp: 1
+2026-08-28 16:31:30,749 kilosort.clustering_qr DEBUG    Center 66 | Xd shape: torch.Size([342, 60]) | ntemp: 1
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG     
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    Cluster center: 67 (40/61)
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    CPU usage:    70.00 %
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    Mem used:      7.50 %     |      75.19 GB
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    Mem avail:    932.33 / 1007.51 GB
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    Max alloc:     0.27 %     |      0.11   /    39.49 GB
+2026-08-28 16:31:30,766 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:31,065 kilosort.clustering_qr DEBUG    Center 67 | Xd shape: torch.Size([35189, 72]) | ntemp: 6
+2026-08-28 16:31:32,549 kilosort.clustering_qr DEBUG    Center 68 | Xd shape: torch.Size([8116, 60]) | ntemp: 2
+2026-08-28 16:31:33,005 kilosort.clustering_qr DEBUG    Center 70 | Xd shape: torch.Size([15403, 72]) | ntemp: 4
+2026-08-28 16:31:34,073 kilosort.clustering_qr DEBUG    Center 73 | Xd shape: torch.Size([3778, 60]) | ntemp: 5
+2026-08-28 16:31:34,721 kilosort.clustering_qr DEBUG    Center 74 | Xd shape: torch.Size([29868, 72]) | ntemp: 13
+2026-08-28 16:31:35,633 kilosort.clustering_qr DEBUG    Center 75 | Xd shape: torch.Size([2409, 60]) | ntemp: 2
+2026-08-28 16:31:36,057 kilosort.clustering_qr DEBUG    Center 76 | Xd shape: torch.Size([5461, 60]) | ntemp: 3
+2026-08-28 16:31:36,409 kilosort.clustering_qr DEBUG    Center 78 | Xd shape: torch.Size([2185, 60]) | ntemp: 1
+2026-08-28 16:31:36,765 kilosort.clustering_qr DEBUG    Center 79 | Xd shape: torch.Size([645, 60]) | ntemp: 1
+2026-08-28 16:31:36,957 kilosort.clustering_qr DEBUG    Center 80 | Xd shape: torch.Size([9143, 72]) | ntemp: 7
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG     
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    Cluster center: 82 (50/61)
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    CPU usage:    75.40 %
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    Mem used:      7.50 %     |      75.19 GB
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    Mem avail:    932.32 / 1007.51 GB
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    Max alloc:     0.27 %     |      0.11   /    39.49 GB
+2026-08-28 16:31:37,386 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:37,449 kilosort.clustering_qr DEBUG    Center 82 | Xd shape: torch.Size([817, 60]) | ntemp: 1
+2026-08-28 16:31:37,529 kilosort.clustering_qr DEBUG    Center 83 | Xd shape: torch.Size([312, 60]) | ntemp: 1
+2026-08-28 16:31:37,609 kilosort.clustering_qr DEBUG    Center 84 | Xd shape: torch.Size([782, 60]) | ntemp: 1
+2026-08-28 16:31:37,721 kilosort.clustering_qr DEBUG    Center 86 | Xd shape: torch.Size([5473, 60]) | ntemp: 4
+2026-08-28 16:31:38,193 kilosort.clustering_qr DEBUG    Center 88 | Xd shape: torch.Size([1087, 60]) | ntemp: 1
+2026-08-28 16:31:38,537 kilosort.clustering_qr DEBUG    Center 89 | Xd shape: torch.Size([20378, 72]) | ntemp: 5
+2026-08-28 16:31:39,353 kilosort.clustering_qr DEBUG    Center 90 | Xd shape: torch.Size([15783, 72]) | ntemp: 3
+2026-08-28 16:31:40,017 kilosort.clustering_qr DEBUG    Center 91 | Xd shape: torch.Size([14280, 60]) | ntemp: 1
+2026-08-28 16:31:40,893 kilosort.clustering_qr DEBUG    Center 92 | Xd shape: torch.Size([253, 60]) | ntemp: 1
+2026-08-28 16:31:41,125 kilosort.clustering_qr DEBUG    Center 93 | Xd shape: torch.Size([9308, 72]) | ntemp: 10
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG     
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    Cluster center: 94 (60/61)
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    CPU usage:    73.80 %
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    Mem used:      7.50 %     |      75.17 GB
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    Mem avail:    932.34 / 1007.51 GB
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    ------------------------------------------------------
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    Max alloc:     0.27 %     |      0.11   /    39.49 GB
+2026-08-28 16:31:41,634 kilosort.clustering_qr DEBUG    ********************************************************
+2026-08-28 16:31:41,689 kilosort.clustering_qr DEBUG    Center 94 | Xd shape: torch.Size([277, 60]) | ntemp: 1
+2026-08-28 16:31:41,953 kilosort.clustering_qr DEBUG    Center 95 | Xd shape: torch.Size([13658, 60]) | ntemp: 12
+2026-08-28 16:31:42,726 kilosort.run_kilosort INFO     808 clusters found, in 33.01s; total 255.00s
+2026-08-28 16:31:42,726 kilosort.run_kilosort DEBUG    clu shape: (510032,)
+2026-08-28 16:31:42,726 kilosort.run_kilosort DEBUG    Wall shape: torch.Size([808, 384, 6])
+2026-08-28 16:31:42,732 kilosort.run_kilosort DEBUG    
+2026-08-28 16:31:42,732 kilosort.run_kilosort DEBUG    --------------------
+2026-08-28 16:31:42,732 kilosort.run_kilosort DEBUG    Process thread count: 99
+2026-08-28 16:31:42,732 kilosort.run_kilosort DEBUG    num torch threads: 32
+2026-08-28 16:31:42,732 kilosort.run_kilosort DEBUG    --------------------
+
+2026-08-28 16:31:42,732 kilosort.run_kilosort INFO      
+2026-08-28 16:31:42,732 kilosort.run_kilosort INFO     Merging clusters
+2026-08-28 16:31:42,732 kilosort.run_kilosort INFO     ----------------------------------------
+2026-08-28 16:31:47,681 kilosort.run_kilosort INFO     657 units found, in 4.95s; total 259.96s
+2026-08-28 16:31:47,682 kilosort.run_kilosort DEBUG    clu shape: (510032,)
+2026-08-28 16:31:47,682 kilosort.run_kilosort DEBUG    Wall shape: torch.Size([657, 384, 6])
+2026-08-28 16:31:47,682 kilosort.run_kilosort DEBUG    
+
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |  11245 KiB | 113463 KiB |  61386 GiB |  61386 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |  11245 KiB | 113463 KiB |  61386 GiB |  61386 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |  11243 KiB | 113454 KiB |  61336 GiB |  61336 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   5356 MiB |   5356 MiB |   5356 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory |  37906 KiB | 111497 KiB |  22728 GiB |  22728 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |      12    |      46    |    2598 K  |    2598 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |      12    |      46    |    2598 K  |    2598 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |      19    |      19    |      19    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      11    |      18    |    1082 K  |    1082 K  |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+
+
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO      
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     Resource usage after clustering
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     CPU usage:    100.00 %
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     Mem used:      7.50 %     |      75.28 GB
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     Mem avail:    932.23 / 1007.51 GB
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     ------------------------------------------------------
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     Max alloc:     0.27 %     |      0.11   /    39.49 GB
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO      
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     Saving to phy and computing refractory periods
+2026-08-28 16:31:47,683 kilosort.run_kilosort INFO     ----------------------------------------
+2026-08-28 16:31:47,693 kilosort.io  DEBUG     
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    save_to_phy, whitening
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    CPU usage:    96.30 %
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    Mem used:      7.50 %     |      75.28 GB
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    Mem avail:    932.23 / 1007.51 GB
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    ------------------------------------------------------
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    Max alloc:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:47,693 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:31:47,878 kilosort.io  DEBUG     
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    save_to_phy, spike positions
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    CPU usage:    98.80 %
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    Mem used:      7.50 %     |      75.31 GB
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    Mem avail:    932.21 / 1007.51 GB
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    ------------------------------------------------------
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    Max alloc:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:47,878 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:31:47,915 kilosort.io  DEBUG     
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    save_to_phy, remove duplicates
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    CPU usage:    20.00 %
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    Mem used:      7.50 %     |      75.30 GB
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    Mem avail:    932.21 / 1007.51 GB
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    ------------------------------------------------------
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    Max alloc:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:47,915 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:31:48,422 kilosort.io  DEBUG     
+2026-08-28 16:31:48,422 kilosort.io  DEBUG    save_to_phy, template props
+2026-08-28 16:31:48,422 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:31:48,422 kilosort.io  DEBUG    CPU usage:    30.20 %
+2026-08-28 16:31:48,422 kilosort.io  DEBUG    Mem used:      7.50 %     |      75.40 GB
+2026-08-28 16:31:48,422 kilosort.io  DEBUG    Mem avail:    932.12 / 1007.51 GB
+2026-08-28 16:31:48,422 kilosort.io  DEBUG    ------------------------------------------------------
+2026-08-28 16:31:48,422 kilosort.io  DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:31:48,422 kilosort.io  DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:31:48,422 kilosort.io  DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:48,422 kilosort.io  DEBUG    Max alloc:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:31:48,423 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:33:05,871 kilosort.io  DEBUG     
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    save_to_phy, pc features
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    CPU usage:    99.20 %
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    Mem used:      7.50 %     |      75.43 GB
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    Mem avail:    932.09 / 1007.51 GB
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    ------------------------------------------------------
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    Max alloc:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:33:05,871 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:33:06,016 kilosort.io  DEBUG     
+2026-08-28 16:33:06,016 kilosort.io  DEBUG    save_to_phy, est contam
+2026-08-28 16:33:06,016 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:33:06,016 kilosort.io  DEBUG    CPU usage:    11.40 %
+2026-08-28 16:33:06,016 kilosort.io  DEBUG    Mem used:      7.50 %     |      75.43 GB
+2026-08-28 16:33:06,016 kilosort.io  DEBUG    Mem avail:    932.08 / 1007.51 GB
+2026-08-28 16:33:06,017 kilosort.io  DEBUG    ------------------------------------------------------
+2026-08-28 16:33:06,017 kilosort.io  DEBUG    GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:33:06,017 kilosort.io  DEBUG    GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:33:06,017 kilosort.io  DEBUG    Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:33:06,017 kilosort.io  DEBUG    Max alloc:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:33:06,017 kilosort.io  DEBUG    ********************************************************
+2026-08-28 16:33:06,020 kilosort.run_kilosort INFO     119 units found with good refractory periods
+2026-08-28 16:33:06,034 kilosort.run_kilosort INFO     Exporting to Phy took: 78.35s
+2026-08-28 16:33:06,034 kilosort.run_kilosort INFO     Total runtime: 338.31s = 00:05:38 h:m:s
+2026-08-28 16:33:06,038 kilosort.run_kilosort INFO     Sorting output saved in: /data/yoh/compression-comparisons/results/dandi-t261-compression-study/derivatives/sorting-2026-08-26-sorting-eval-t261-600s/bittrunc-bits_7/sorter_output/sorter_output.
+2026-08-28 16:33:06,038 kilosort.run_kilosort DEBUG    
+
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |  11245 KiB |  11821 KiB |  61386 GiB |  61386 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |  11245 KiB |  11821 KiB |  61386 GiB |  61386 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |  11243 KiB |  11819 KiB |  61336 GiB |  61336 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   5356 MiB |   5356 MiB |   5356 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory |  37906 KiB |  37906 KiB |  22728 GiB |  22728 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |      12    |      13    |    2608 K  |    2608 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |      12    |      13    |    2608 K  |    2608 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |      19    |      19    |      19    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      11    |      11    |    1088 K  |    1088 K  |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+
+
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO      
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     Resource usage after saving
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     ********************************************************
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     CPU usage:    17.60 %
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     Mem used:      7.50 %     |      75.37 GB
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     Mem avail:    932.15 / 1007.51 GB
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     ------------------------------------------------------
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     GPU usage:    `conda install pynvml` for GPU usage
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     GPU memory:   14.61 %     |      5.77   /    39.49 GB
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     Allocated:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     Max alloc:     0.03 %     |      0.01   /    39.49 GB
+2026-08-28 16:33:06,039 kilosort.run_kilosort INFO     ********************************************************
