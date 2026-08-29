@@ -54,7 +54,12 @@ PROFILE="${1:-sorting-eval-t261}"
 DUR="${2:-100}"
 LSB=12                      # MEArec NP1 is simulated at Open Ephys scaling
 MEAREC=sourcedata/aind-ephys-compression/mearec/mearec_NP1.h5
-OUT="derivatives/sorting-$(date -I)-${PROFILE}"
+# Duration is part of the identity of the results, not a detail: a 100 s
+# slice and the full 600 s recording give different sorter baselines (the
+# paper sorts the whole file and recovers 100/100 units; a 100 s slice
+# recovers 87). Without it in the path, a second run at another duration
+# lands in the first one's directory and every arm is skipped as done.
+OUT="derivatives/sorting-$(date -I)-${PROFILE}-${DUR}s"
 
 # Pinned-checkout guard: the recorded tool commit must be what runs.
 PINNED="$(git rev-parse HEAD:code/compression-comparisons-tools)"
