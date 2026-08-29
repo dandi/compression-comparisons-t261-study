@@ -1,8 +1,8 @@
 # T.261 vs the paper codec set — compression (real NP1 recordings)
 
 4 recordings (2 IBL, 2 AIND), 300 s slices, **both arms at 10 s chunks** so
-every comparison is like-for-like. 90 of 96 cells; 6 zstd cells were lost to
-an invalid `shuffle: bit` (bit-shuffle is blosc-only) and are queued to re-run.
+every comparison is like-for-like. **All 96 cells.** 6 zstd cells were initially lost to an invalid `shuffle: bit`
+(bit-shuffle is blosc-only) and were recovered by resuming the sweep in place.
 
 Chunking is 10 s because the constraints push from both sides: numcodecs
 rejects buffers over 1.97 GiB (so whole-buffer is impossible for every
@@ -18,6 +18,7 @@ and a 60 s chunk exceeded the encoder's subprocess timeout under load.
 | t261       | lossy    |  30 |     4.551 | [2.06, 16.80] |
 | wavpack    | lossless |   7 |     3.595 | [2.00, 3.67]  |
 | wavpack    | lossy    |  29 |     5.507 | [2.64, 7.16]  |
+| zstd       | lossless |   6 |     2.346 | [1.92, 2.80]  |
 
 ## Reading
 
