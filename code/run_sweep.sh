@@ -88,7 +88,12 @@ export TMPDIR="${TMPDIR:-$STUDY/.tmp}"
 export COMPBENCH_BLOSC_THREADS="${COMPBENCH_BLOSC_THREADS:-1}"
 mkdir -p "$TMPDIR"
 
-OUT="derivatives/compbench-$(date -I)-${PROFILE_NAME}"
+# COMPBENCH_RESULTS_DIR resumes an EXISTING sweep instead of starting a new
+# dated one. Snakemake skips any cell whose outputs are present, so a resume
+# computes only what is missing -- the 6 cells lost to a bad codec param, or
+# the 738 still outstanding in a paused sweep. Without it every resume would
+# recompute work that is already committed.
+OUT="${COMPBENCH_RESULTS_DIR:-derivatives/compbench-$(date -I)-${PROFILE_NAME}}"
 echo "=== [$(date -Is)] $PROFILE_NAME ==="
 echo "    tool commit : $ACTUAL (pinned)"
 echo "    codecs      : $(compbench list-codecs | tr '\n' ' ')"
