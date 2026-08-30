@@ -1,0 +1,71 @@
+{
+  "codec": {
+    "hybrid_flag_semantics": "or-equals (>=0.2.0)",
+    "lossy": true,
+    "name": "wavpack",
+    "params": {
+      "bps": 3.5,
+      "level": 2
+    },
+    "wavpack_numcodecs_version": "0.2.3"
+  },
+  "compbench_version": "0.0.1.dev0",
+  "created_utc": "2026-08-30T14:32:20+00:00",
+  "git_sha": "48825e8a80ae2854edf2c404703a9bdd04e3b02a",
+  "input": {
+    "dtype": "int16",
+    "duration_s": 1766.236,
+    "n_channels": 384,
+    "nbytes": 40694077440,
+    "provenance": {
+      "loader": "aind-benchmark",
+      "params": {
+        "channel_indices": null,
+        "duration_s": null,
+        "path": "sourcedata/aind-ephys-compression/aind-np1/634568_2022-08-05_15-59-46_ProbeA",
+        "start_s": 0.0
+      },
+      "preprocessing": [
+        {
+          "kind": "lsb_correction",
+          "lsb": 12
+        },
+        {
+          "chunk_duration_s": 1.0,
+          "high_hz": 6000,
+          "kind": "bandpass",
+          "low_hz": 300,
+          "order": 5,
+          "variant": "spikeinterface"
+        }
+      ],
+      "source": {
+        "annex_key": "MD5E-s40694077440--2d8e406a8388a7327fb9a873d0c9a91a.raw",
+        "dataset_commit": "df5736f545caaf73af5abb38e9a30f6fe04fa3d7",
+        "dataset_root": "/data/yoh/compression-comparisons/results/dandi-t261-compression-study/sourcedata/aind-ephys-compression"
+      },
+      "spikeinterface": {
+        "dtype_native": "int16",
+        "folder_name": "634568_2022-08-05_15-59-46_ProbeA",
+        "n_channels_total": 384,
+        "sampling_frequency_hz": 30000.0
+      },
+      "yaml_source": "derivatives/compbench-2026-08-22-paper-real-np1-8-general/generated-datasets/aind-634568-lsbbp.yaml"
+    },
+    "sample_rate_hz": 30000.0,
+    "sha256": "229f9bb9dade3d6131f9a99f2f54745105268ee3e4c30f338772c249c5372d30",
+    "shape": [
+      52987080,
+      384
+    ]
+  },
+  "platform": {
+    "machine": "x86_64",
+    "release": "6.12.57+deb13-amd64",
+    "system": "Linux"
+  },
+  "python": {
+    "impl": "CPython",
+    "version": "3.13.15"
+  }
+}
