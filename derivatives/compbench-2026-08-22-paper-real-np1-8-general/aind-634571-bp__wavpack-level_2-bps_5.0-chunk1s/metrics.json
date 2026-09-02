@@ -1,0 +1,23 @@
+{
+  "chunk_duration_s": 1.0,
+  "cr": 3.5164087243562165,
+  "decode_time_s": 745.94660865888,
+  "decode_xrt": 2.4334433308350842,
+  "encode_time_s": 957.0839062407613,
+  "encode_xrt": 1.8966140671300442,
+  "encoded_bytes": 11893566542,
+  "expected_lossless": false,
+  "lossless_violation": false,
+  "n_chunks": 1816,
+  "original_bytes": 41822641152,
+  "prd_percent": 0.47082898325432954,
+  "prdn_per_channel_iqr_percent": 0.06772762793295822,
+  "prdn_per_channel_max_percent": 1.000957088763328,
+  "prdn_per_channel_median_percent": 0.4578213215439431,
+  "prdn_percent": 0.47082898325432954,
+  "rmse": 0.5171082568412071,
+  "rmse_band_limited_300_6000": 0.3221463713115812,
+  "rmse_over_signal_std_percent": 0.4708289832543296,
+  "round_trip_ok": false,
+  "signal_std": 109.82931706264111
+}
