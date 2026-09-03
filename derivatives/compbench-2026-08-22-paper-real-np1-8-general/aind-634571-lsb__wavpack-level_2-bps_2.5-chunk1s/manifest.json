@@ -1,0 +1,63 @@
+{
+  "codec": {
+    "hybrid_flag_semantics": "or-equals (>=0.2.0)",
+    "lossy": true,
+    "name": "wavpack",
+    "params": {
+      "bps": 2.5,
+      "level": 2
+    },
+    "wavpack_numcodecs_version": "0.2.3"
+  },
+  "compbench_version": "0.0.1.dev0",
+  "created_utc": "2026-09-03T04:06:04+00:00",
+  "git_sha": "959ac1d49661f0eb0a30800c794c9c23fd349d96",
+  "input": {
+    "dtype": "int16",
+    "duration_s": 1815.2188,
+    "n_channels": 384,
+    "nbytes": 41822641152,
+    "provenance": {
+      "loader": "aind-benchmark",
+      "params": {
+        "channel_indices": null,
+        "duration_s": null,
+        "path": "sourcedata/aind-ephys-compression/aind-np1/634571_2022-08-04_14-27-05_ProbeA",
+        "start_s": 0.0
+      },
+      "preprocessing": [
+        {
+          "kind": "lsb_correction",
+          "lsb": 12
+        }
+      ],
+      "source": {
+        "annex_key": "MD5E-s41822641152--8e1f67c966c6e7e459c2aa6d6be9e7d5.raw",
+        "dataset_commit": "df5736f545caaf73af5abb38e9a30f6fe04fa3d7",
+        "dataset_root": "/data/yoh/compression-comparisons/results/dandi-t261-compression-study/sourcedata/aind-ephys-compression"
+      },
+      "spikeinterface": {
+        "dtype_native": "int16",
+        "folder_name": "634571_2022-08-04_14-27-05_ProbeA",
+        "n_channels_total": 384,
+        "sampling_frequency_hz": 30000.0
+      },
+      "yaml_source": "derivatives/compbench-2026-08-22-paper-real-np1-8-general/generated-datasets/aind-634571-lsb.yaml"
+    },
+    "sample_rate_hz": 30000.0,
+    "sha256": "24815f9e72be959b33e0335db26427f5da4137f6c7fa4e65861d4076d81de8b4",
+    "shape": [
+      54456564,
+      384
+    ]
+  },
+  "platform": {
+    "machine": "x86_64",
+    "release": "6.12.57+deb13-amd64",
+    "system": "Linux"
+  },
+  "python": {
+    "impl": "CPython",
+    "version": "3.13.15"
+  }
+}
