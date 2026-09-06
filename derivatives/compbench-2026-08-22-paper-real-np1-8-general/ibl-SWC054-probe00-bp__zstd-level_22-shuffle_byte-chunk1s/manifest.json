@@ -1,0 +1,71 @@
+{
+  "codec": {
+    "filters": [
+      {
+        "elementsize": 2,
+        "id": "shuffle"
+      }
+    ],
+    "lossy": false,
+    "name": "zstd",
+    "params": {
+      "level": 22,
+      "shuffle": "byte"
+    }
+  },
+  "compbench_version": "0.0.1.dev0",
+  "created_utc": "2026-09-06T08:56:20+00:00",
+  "git_sha": "79a3cd80e197aefa3adf53fcc70e2089120ffe18",
+  "input": {
+    "dtype": "int16",
+    "duration_s": 1200.000007773232,
+    "n_channels": 384,
+    "nbytes": 27648360192,
+    "provenance": {
+      "loader": "aind-benchmark",
+      "params": {
+        "channel_indices": null,
+        "duration_s": null,
+        "path": "sourcedata/aind-ephys-compression/ibl-np1/SWC054_2020-10-05_probe00",
+        "start_s": 0.0
+      },
+      "preprocessing": [
+        {
+          "chunk_duration_s": 1.0,
+          "high_hz": 6000,
+          "kind": "bandpass",
+          "low_hz": 300,
+          "order": 5,
+          "variant": "spikeinterface"
+        }
+      ],
+      "source": {
+        "annex_key": "MD5E-s27648360192--b70dc958a42d501cce55768114fd233b.raw",
+        "dataset_commit": "df5736f545caaf73af5abb38e9a30f6fe04fa3d7",
+        "dataset_root": "/data/yoh/compression-comparisons/results/dandi-t261-compression-study/sourcedata/aind-ephys-compression"
+      },
+      "spikeinterface": {
+        "dtype_native": "int16",
+        "folder_name": "SWC054_2020-10-05_probe00",
+        "n_channels_total": 384,
+        "sampling_frequency_hz": 30000.390639
+      },
+      "yaml_source": "derivatives/compbench-2026-08-22-paper-real-np1-8-general/generated-datasets/ibl-SWC054-probe00-bp.yaml"
+    },
+    "sample_rate_hz": 30000.390639,
+    "sha256": "90017eb8e1488892059efad5b93b227942e2e34209becf3f4db8bb99ebe8a6c3",
+    "shape": [
+      36000469,
+      384
+    ]
+  },
+  "platform": {
+    "machine": "x86_64",
+    "release": "6.12.57+deb13-amd64",
+    "system": "Linux"
+  },
+  "python": {
+    "impl": "CPython",
+    "version": "3.13.15"
+  }
+}
