@@ -1,0 +1,67 @@
+{
+  "codec": {
+    "hybrid_flag_semantics": "or-equals (>=0.2.0)",
+    "lossy": true,
+    "name": "wavpack",
+    "params": {
+      "bps": 5.0,
+      "level": 2
+    },
+    "wavpack_numcodecs_version": "0.2.3"
+  },
+  "compbench_version": "0.0.1.dev0",
+  "created_utc": "2026-09-08T11:29:01+00:00",
+  "git_sha": "0ab84af3c60b9094f59aa040bfa0298cec1d6906",
+  "input": {
+    "dtype": "int16",
+    "duration_s": 1200.0,
+    "n_channels": 384,
+    "nbytes": 27648000000,
+    "provenance": {
+      "loader": "aind-benchmark",
+      "params": {
+        "channel_indices": null,
+        "duration_s": null,
+        "path": "sourcedata/aind-ephys-compression/ibl-np1/CSHZAD029_2020-09-09_probe00",
+        "start_s": 0.0
+      },
+      "preprocessing": [
+        {
+          "chunk_duration_s": 1.0,
+          "high_hz": 6000,
+          "kind": "bandpass",
+          "low_hz": 300,
+          "order": 5,
+          "variant": "spikeinterface"
+        }
+      ],
+      "source": {
+        "annex_key": "MD5E-s27648000000--ef48e18f72f6ab789f001db2451e46d7.raw",
+        "dataset_commit": "df5736f545caaf73af5abb38e9a30f6fe04fa3d7",
+        "dataset_root": "/data/yoh/compression-comparisons/results/dandi-t261-compression-study/sourcedata/aind-ephys-compression"
+      },
+      "spikeinterface": {
+        "dtype_native": "int16",
+        "folder_name": "CSHZAD029_2020-09-09_probe00",
+        "n_channels_total": 384,
+        "sampling_frequency_hz": 30000.0
+      },
+      "yaml_source": "derivatives/compbench-2026-08-22-paper-real-np1-8-general/generated-datasets/ibl-CSHZAD029-bp.yaml"
+    },
+    "sample_rate_hz": 30000.0,
+    "sha256": "1b006ae59ae8b5c00273011333471bb57eb7f065da7746225122d30e1fbad377",
+    "shape": [
+      36000000,
+      384
+    ]
+  },
+  "platform": {
+    "machine": "x86_64",
+    "release": "6.12.57+deb13-amd64",
+    "system": "Linux"
+  },
+  "python": {
+    "impl": "CPython",
+    "version": "3.13.15"
+  }
+}
