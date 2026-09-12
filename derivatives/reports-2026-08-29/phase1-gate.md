@@ -1,49 +1,71 @@
 # Phase 1 gate — reproduction of Buccino et al. 2023 (Fig 2/6)
 
-9 general-purpose codecs x 8 NP1 recordings = 72 cells, at the paper's
-conditions: LSB-corrected, 1 s chunks, level `high`, shuffle `byte`.
+9 general-purpose codecs x 8 NP1 recordings = 72 cells, paired
+**per recording** against the capsule's own per-session numbers
+(`benchmark-lossless.csv`, 6300 rows), at the paper's conditions: level
+`high`, shuffle `byte`, 1 s chunks, LSB-corrected.
 
-`byte` is forced, not chosen: the reference table has no `bit` rows for the
-non-blosc codecs (bit-shuffle is a blosc feature), so `byte` is the only
-setting present for all nine.
+`byte` is forced, not chosen: the reference has no `bit` rows for the
+non-blosc codecs, so it is the only shuffle present for all nine.
 
-**69 of 72 cells (96 %) fall inside the paper's per-recording CR range.**
+## Verdict: PASS
 
-| codec       |   n | our median CR | paper median | ratio |
-| ----------- | --: | ------------: | -----------: | ----: |
-| blosc-lz4   |   8 |         1.417 |        1.417 | 1.000 |
-| blosc-lz4hc |   8 |         1.762 |        1.762 | 1.000 |
-| blosc-zlib  |   8 |         2.357 |        2.357 | 1.000 |
-| blosc-zstd  |   8 |         2.440 |        2.437 | 1.001 |
-| gzip        |   8 |         2.361 |        2.361 | 1.000 |
-| lz4         |   8 |         1.413 |        1.413 | 1.000 |
-| lzma        |   8 |         2.567 |        2.567 | 1.000 |
-| zlib        |   8 |         2.361 |        2.361 | 1.000 |
-| zstd        |   8 |         2.454 |        2.463 | 0.996 |
+**Deviation from the paper, per recording: median 0.02 %, max 1.16 %.**
 
-## Verdict
+Gate thresholds are median <= 2 % and max <= 5 %. The median is inside by
+roughly two orders of magnitude and the worst single cell by a factor of ~4.
 
-**Seven of nine codecs reproduce the paper's median to three decimal places;**
-the largest deviation is 0.4 %. On the quantity the gate is about -- do our
-compression ratios match the paper's -- this is essentially exact.
+| codec       |   n | median deviation | max deviation |
+| ----------- | --: | ---------------: | ------------: |
+| zstd        |   8 |           0.32 % |        1.16 % |
+| blosc-zstd  |   8 |           0.15 % |        0.71 % |
+| lz4         |   8 |           0.03 % |        0.05 % |
+| blosc-lz4   |   8 |           0.02 % |        0.04 % |
+| lzma        |   8 |           0.02 % |        0.02 % |
+| blosc-lz4hc |   8 |           0.01 % |        0.02 % |
+| zlib        |   8 |           0.01 % |        0.02 % |
+| gzip        |   8 |           0.01 % |        0.02 % |
+| blosc-zlib  |   8 |           0.01 % |        0.11 % |
 
-### Ranking
+## Ranking
+
+Both rankings are computed from the same 8 recordings at the same
+conditions -- ours from our cells, the paper's from its own per-session rows.
 
 * ours : lzma > zstd > blosc-zstd > zlib > gzip > blosc-zlib > blosc-lz4hc > blosc-lz4 > lz4
-* paper: lzma > blosc-zstd > zstd > gzip > zlib > blosc-zlib > blosc-lz4hc > blosc-lz4 > lz4
-* identical positions: 5/9
+* paper: lzma > zstd > blosc-zstd > gzip > zlib > blosc-zlib > blosc-lz4hc > blosc-lz4 > lz4
+* identical positions: 7/9
 
-`lzma` first and the bottom four are exact. The middle disagreements are
-between codecs that tie: `gzip` and `zlib` are **identical at 2.361** in both
-datasets, and `zstd`/`blosc-zstd` differ by 0.014. The paper itself writes
-"gzip = zlib". Ordering codecs that agree to three decimals is not a
-meaningful test, and a ranking criterion should not be read as failed here.
+| codec       | our median CR | paper median CR |
+| ----------- | ------------: | --------------: |
+| lzma        |        2.5674 |          2.5675 |
+| zstd        |        2.4540 |          2.4635 |
+| blosc-zstd  |        2.4404 |          2.4370 |
+| gzip        |        2.3614 |          2.3610 |
+| zlib        |        2.3614 |          2.3610 |
+| blosc-zlib  |        2.3574 |          2.3575 |
+| blosc-lz4hc |        1.7616 |          1.7615 |
+| blosc-lz4   |        1.4170 |          1.4170 |
+| lz4         |        1.4132 |          1.4130 |
 
-### A note on the per-cell ratio statistic
+The single disagreement is `gzip` vs `zlib`, and they are **tied**:
+2.3610 vs 2.3610 in the paper's own data,
+2.3614 vs 2.3614 in ours. The paper writes them as
+"gzip = zlib". Ordering a tie differently is not a reproduction failure, so
+the ranking is reproduced as exactly as the data permits.
 
-Comparing each individual recording against the paper's median-over-eight
-gives median 5.0 % / max 11.7 %, which exceeds the plan's 2 %/5 % thresholds.
-That statistic measures per-recording spread, not reproduction error -- the
-paper publishes only medians, so a per-recording pairing against them is not
-available. The per-codec column above is the paired comparison the gate
-intends. This is recorded rather than resolved silently.
+## Corrections to the first version of this report
+
+Recorded because both errors ran in the same direction -- understating a
+result -- and because the cause is worth not repeating.
+
+1. It stated that *"the paper publishes only medians, so a per-recording
+   pairing against them is not available"*. False. `benchmark-lossless.csv`
+   is per-session and was in the vendored capsule the whole time. A derived
+   table of medians and ranges was built from it early on, and every later
+   comparison used that derived table instead of the source.
+2. It reported *median 5.0 % / max 11.7 %* against the 2 %/5 % thresholds,
+   from comparing single recordings against a median over eight. That
+   statistic measures per-recording spread, not reproduction error.
+3. It reported the ranking matching at 5/9. On identical footing it is
+   7/9, with the only gap being a tie.

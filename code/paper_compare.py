@@ -41,8 +41,10 @@ def load_reference(path):
     return ref
 
 
-def rows_for(results_dir, ref):
+def rows_for(results_dir, ref, skipped_delta=None):
     out = []
+    if skipped_delta is None:
+        skipped_delta = []
     for f in sorted(glob.glob(os.path.join(results_dir, "*", "metrics.json"))):
         cell = os.path.basename(os.path.dirname(f))
         if "__" not in cell:
@@ -52,6 +54,14 @@ def rows_for(results_dir, ref):
         if cond not in ("raw", "lsb"):
             continue
         lsb_mode = "corrected" if (ds.startswith("ibl") or cond == "lsb") else "uncorrected"
+        # A delta-filtered cell must NOT be joined to the non-delta table: the
+        # filter changes the CR, so the comparison would be against the wrong
+        # reference. The capsule keeps a separate benchmark-lossless-delta.csv
+        # for these. Counted and skipped rather than silently mis-joined --
+        # 14 of 22 apparent "outside range" cells were this bug.
+        if "-delta_" in codecpart:
+            skipped_delta.append(cell)
+            continue
         m = re.match(r"(.+?)-(?:level|preset|acceleration)_([0-9.]+)(?:-shuffle_(\w+))?", codecpart)
         if not m:
             continue
@@ -75,13 +85,17 @@ def rows_for(results_dir, ref):
 
 def main():
     results_dir, ref_csv = sys.argv[1], sys.argv[2]
-    rows = rows_for(results_dir, load_reference(ref_csv))
+    skipped_delta = []
+    rows = rows_for(results_dir, load_reference(ref_csv), skipped_delta)
     if not rows:
         print("No completed lossless cells join a paper row yet.")
         return
     inr = sum(r["in_range"] for r in rows)
     edge = sum(r["on_edge"] for r in rows)
     dev = [abs(r["cr"] - r["median"]) / r["median"] for r in rows]
+    if skipped_delta:
+        print(f"*{len(skipped_delta)} delta-filtered cells excluded: they need "
+              f"`benchmark-lossless-delta.csv`, not the non-delta reference.*\n")
     print(f"**{inr}/{len(rows)}** joined cells fall inside the paper's "
           f"per-recording CR range ({100 * inr / len(rows):.0f}%). "
           f"{edge} land exactly on a range endpoint — that recording is the "
