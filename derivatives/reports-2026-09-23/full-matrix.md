@@ -369,6 +369,54 @@ pairs with our `lsb` (AIND) and `raw` (IBL) arms. 32 cells pair.
 |    5 |   4 |         +5.03 % | -0.22 % | +6.29 % |          0.3379 |            0.3370 |              +2.4 % (n=4) |
 |    6 |   4 |         +1.87 % | +0.13 % | +3.17 % |          0.0042 |            0.0000 |             +26.7 % (n=1) |
 
+### 3.1-CORRECTION — the -31 % was a metric mismatch, not a codec difference
+
+**Section 3.1 below is wrong and is retained only so the error is legible.
+Do not quote its -31 %.**
+
+It compares the study's `metric_rmse` -- full band, raw sample units, whole
+recording -- against the paper's `rmse`, which is **band-passed 300-6000 Hz,
+in microvolts, and measured only over frames [15 s, 20 s)**
+(`time_range_rmse = [15, 20]` in the paper's driver). Three mismatches at
+once. Correcting them one at a time over the same 20 paired cells:
+
+| comparison                                      | median dev vs paper |
+| ----------------------------------------------- | ------------------: |
+| as compared in 3.1 (full band, raw units)        |             -30.9 % |
+| + band-limited 300-6000 Hz, converted to uV      |             +13.3 % |
+| + measured in the paper's 15-20 s window         |              -8.5 % |
+
+Independently recomputed here from the parquet over 35 paired raw/lsb12
+cells at bps <= 4.0: full-band raw units gives ratio 0.7189 (ours 28 %
+*lower*), and band-limited-plus-uV gives 1.2450 (ours 24.5 % *higher*).
+**Correcting the metric flips the sign of the finding.**
+
+The causal attribution to `wavpack-numcodecs` 0.1.3-vs-0.2.3 is also
+withdrawn. Measured directly, the two versions are rate-distortion
+equivalent at matched CR (median +1.2 % over 4 recordings x bps 2.25-4.0),
+so the version cannot produce a 31 % RMSE difference. The flag-change note
+itself was wrong about the version: it shipped in **0.1.4** (upstream commit
+a812cb67), and for our `level: 2` cells the only flag it affects is
+`CONFIG_PAIR_UNDEF_CHANS`, not the level flags.
+
+**What survives, and it is a genuine reproduction gap -- on CR, not RMSE:**
+against the paper's published lossy table, `wavpack-numcodecs` 0.1.3
+reproduces CR to within 0.9 % at all 28 points, while 0.2.3 deviates by up
+to 7.8 %. Recommendation is to keep 0.2.3 anyway: 0.1.3's hybrid mode
+silently discards `level` (verified -- level 2 and level 3 emit bit-identical
+output, so the paper's own `level=3` never took effect), it cannot be
+installed in the study venv, and 0.2.3 is what a user gets today.
+
+**Consequence for the T.261 comparison.** The earlier claim that every
+T.261-vs-WavPack result here is measured against a WavPack ~30 % better than
+the published one is **withdrawn**. The study's T.261 comparison runs both
+arms in-house at matched conditions, so it was never against the paper's
+published WavPack in the first place.
+
+A residual remains after fixing the metric (-8.5 % for 0.2.3, -12.5 % for
+0.1.3, growing with bps) and is NOT run to ground. It affects both versions
+nearly equally, so it does not bear on the version question.
+
 ### 3.1 The lossless point reproduces; the hybrid points do not
 
 At `factor == 0` the four paired cells land within **0.4 %** of the paper
