@@ -286,6 +286,35 @@ version difference in filter form, margin handling or the round-then-cast, and
 **I cannot close it from the material available here.** It does not affect any
 unfiltered result, which is every number in §1 and §2.1.
 
+### 2.2b One mechanism tested and REFUTED: it is not low-order-bit rounding
+
+The obvious reading of 2.2 is that the filtered samples differ only slightly
+-- a rounding or dtype difference between SpikeInterface versions -- because
+entropy coders lose byte-pattern matches to least-significant-bit noise
+while a predictive codec like `wavpack` barely notices. That would explain
+why `blosc-zstd` and `lzma` miss by 1.8-2.6 % while `wavpack` is exact.
+
+**Measured, and it does not hold.** 20 s of LSB-corrected, band-passed AIND
+634568, perturbing only the least significant bit:
+
+| perturbation               | blosc-zstd(bit) | lzma(byte) | zstd(byte) |
+| -------------------------- | --------------: | ---------: | ---------: |
+| baseline                   |          3.2695 |     2.9270 |     2.8168 |
+| +-1 LSB on 1 % of samples  |         -0.01 % |    -0.02 % |    -0.77 % |
+| +-1 LSB on 5 % of samples  |         -0.06 % |    -0.10 % |    -0.86 % |
+| +-1 LSB on 20 % of samples |         -0.23 % |    -0.42 % |    -2.56 % |
+
+The two codecs that actually show the gap are nearly immune: even perturbing
+a fifth of all samples costs them 0.23 % and 0.42 %, an order of magnitude
+short of the 1.8 % and 2.6 % to be explained. (Plain `zstd(byte)` *is*
+sensitive at -2.56 %, but it is not one of the codecs showing the
+discrepancy.)
+
+So the band-pass residual is **not** a rounding or dtype difference, and no
+replacement mechanism is offered. The gap stands as 2.2 states it: open, and
+not closable without the paper's preprocessing scripts, which are not
+vendored here. Recorded so the hypothesis is not re-tested.
+
 ### 2.3 Band-passing *without* LSB correction is worthless on AIND
 
 This axis has no paper counterpart — the capsule has no uncorrected
