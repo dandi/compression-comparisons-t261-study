@@ -29,29 +29,33 @@ We welcome a standardized, lossless-capable waveform codec in DICOM, and we
 benchmarked T.261 independently on this class of data. The comparison set
 and protocol follow Buccino et al. 2023 (J Neural Eng,
 [10.1088/1741-2552/acf5a4](https://doi.org/10.1088/1741-2552/acf5a4)). As a
-check, we reproduced that paper's lossless results for its nine
-general-purpose codecs on eight recordings, to within 0.02 % median and
-1.16 % maximum deviation per recording. The main findings that bear on the
-Supplement:
+check, we reproduced that paper's lossless results: 11 codecs on eight
+Neuropixels 1.0 recordings, paired per recording, with a median deviation
+of 0.017 % (287 of 288 cells within 5 %) and the paper's codec ranking
+reproduced 11/11. The main findings that bear on the Supplement:
 
 1. **T.261 compresses these recordings well in its independent-channel
    configuration, the only one we could run.** Its lossless median CR of
    3.56 ties WavPack (3.56) and is ~42 % ahead of the best general-purpose
    codec (`blosc-zstd`, 2.52). The joint-channel configuration, the only
    one Closed Issue #10 admits, did not finish encoding 10 s of 384-channel
-   data within 30 minutes.
+   data within 30 minutes. In the stock presets, its cross-channel
+   predictor also does not compensate for the staggered sampling of
+   multiplexed-ADC probes.
 2. **The reference software runs 5–50x slower than real time.** Decoding
    alone took ~5 s of wall-clock time per second of recording,
-   single-threaded, for lossless and lossy alike.
+   single-threaded, for lossless and lossy alike. We also found defects in
+   the reference encoder that affect lossy fidelity.
 3. **Compression ratio alone does not describe lossy fidelity.** For T.261,
    the quantizer step fixes the error, and CR follows from the data. The
    same recording, stored at two scalings, gave CR 3.1 and 12.1 at the same
    step.
 4. **At moderate settings, lossy T.261 preserved spike sorting and spike
-   waveforms.** Up to QP 5.0 (CR 8.6), unit recovery stayed within two
-   units of lossless, and waveform features stayed within a 10 %
-   tolerance. Spurious units rose steadily with QP. QP 8.0 failed the
-   waveform test.
+   waveforms.** Up to QP 3.0 (CR 6.0), unit recovery stayed within two
+   units of lossless and waveform features stayed within a 10 %
+   tolerance. QP 5.0 (CR 8.6) is borderline: it passes that tolerance on a
+   100 s excerpt but fails it over the full 600 s. Spurious units rose with
+   QP.
 
 Details, evidence and caveats follow the comments.
 
@@ -76,7 +80,19 @@ microelectrode recordings, our experience was the reverse:
   within our 30-minute limit. That is more than 180x slower than real
   time. If cost scaled linearly, a 1–2 h recording would need at least
   several days per probe. We therefore have no joint-channel compression
-  ratio for this data. It may well be good, but we could not obtain it.
+  ratio for this data, though there is reason to expect little gain (next
+  point).
+* Neuropixels probes, like many high-channel-count devices, multiplex their
+  ADCs: neighbouring channels are sampled at staggered instants (12
+  distinct offsets spanning 0.92 of a sample period on Neuropixels 1.0).
+  DICOM can already record this per channel, as Channel Time Skew
+  (003A,0130). The reference encoder's cross-channel predictor, however,
+  reads the neighbouring channel at the same sample index with no offset
+  compensation. Its sub-sample filtering option is off in the stock
+  presets, and we have not tested whether enabling it helps. A
+  fractional-sample skew is largest in effect exactly at
+  spike frequencies. Joint coding therefore has a structural handicap on
+  this class of hardware, in addition to its cost.
 
 If the Transfer Syntax, or conformance to it, requires joint-channel
 coding, T.261 is not usable in practice for high-channel-count
@@ -122,6 +138,14 @@ files, on a host shared with other jobs, so the ratios between codecs are
 more trustworthy than the absolute values. Even so, T.261 is ~12–70x
 slower than WavPack, which compresses this data equally well, and its
 decoder runs at a fifth of real time.
+
+Encoder presets also matter. Changing a single rate-distortion search
+parameter (`BMNumCandsFullRD` 2 → 1) cut lossy encode time by ~39 % at
+every QP from 1.0 to 8.0, with CR identical to four decimals. The decoded
+samples are not bit-identical, however (3 % differ), and whether that
+change is neutral for spike sorting is still being evaluated.
+Faster encoding therefore seems achievable, but it does not change
+decoding, which is what every reader pays.
 
 **Proposed solution.** We ask WG-32 to publish throughput figures for the
 reference software at high channel counts and sampling rates. We also ask
@@ -171,12 +195,13 @@ inputs. The CR is then whatever the data yield.
 
 Across our four recordings (LSB = 1), CR at a fixed step varied by 1.1–1.4x.
 The larger effect is sample scaling. Two of the recordings are stored by
-their acquisition software as multiples of 12 (see Comment 6). On the same
+their acquisition software on a lattice of multiples of 12 (see
+Comment 6). On the same
 recording, the same step gave:
 
 | input                            | QP 1.5 CR | QP 8.0 CR | RMSE at QP 8.0 (stored units) |
 | -------------------------------- | --------: | --------: | ----------------------------: |
-| AIND 625749, as stored (×12)     |      2.06 |      3.07 |                          2.11 |
+| AIND 625749, as stored (~×12)    |      2.06 |      3.07 |                          2.11 |
 | AIND 625749, LSB-corrected       |      4.00 |     12.07 |                          2.42 |
 | four recordings, LSB = 1 (range) | 4.00–4.40 | 12.1–16.8 |                     2.42–2.44 |
 
@@ -185,9 +210,11 @@ QP 1.5 on the LSB-corrected data (4.0–4.4). Measured in ADC counts, however,
 its error was about 12x smaller. The CR alone cannot distinguish these
 cases; the quantizer step, read together with Channel Sensitivity, can.
 
-The step also tracked the downstream effect. In our spike-sorting
-evaluation (Comment 5), spurious units rose monotonically with QP:
-129 → 133 → 138 → 145 → 184 for QP 1.5 → 8.0.
+The step also tracked the downstream effect across large steps. In our
+spike-sorting evaluation (Comment 5), spurious units rose monotonically
+with QP: 129 → 133 → 138 → 145 → 184 for QP 1.5 → 8.0. Small changes at a
+fixed QP can move this count by 15–22 units, so it is an indicator of
+trend, not a precise per-setting figure.
 
 Closed Issue #4 decided that parameters used internally by the codec should
 not be duplicated into DICOM metadata. We think the quantizer step is
@@ -220,24 +247,34 @@ a simulated Neuropixels 1.0 recording (MEArec, 100 ground-truth units,
 | lossless baseline |  3.721 |            96 |            126 |          0.000 ¹ |
 | T.261 QP 1.5      |  4.270 |            94 |            129 |            0.038 |
 | T.261 QP 3.0      |  5.989 |            98 |            138 |            0.034 |
-| T.261 QP 5.0      |  8.575 |            96 |            145 |            0.085 |
+| T.261 QP 5.0      |  8.575 |            96 |            145 |          0.085 ² |
 | T.261 QP 8.0      | 14.514 |            99 |            184 |            0.145 |
 | WavPack 2.25 bps  |  7.101 |            97 |            131 |            0.057 |
 
 ¹ Zero by construction for a lossless codec.
+² 0.120 when evaluated over the full 600 s, which fails the 10 % line.
 
 "Waveform p90 err" is the 90th percentile, over units, of the relative
 error in spike-waveform features. We apply the 10 % tolerance of Buccino et
 al. (Fig. 14). It is computed from ground-truth spike times, so no sorter
-is involved, on a 100 s excerpt of the same recording.
+is involved. Except where noted, it covers a 100 s excerpt of the same
+recording.
 
-Through QP 5.0, T.261 kept unit recovery within two units of lossless and
-passed the waveform criterion, at ~21 % higher CR than WavPack's best
-passing setting. It produced more spurious units than WavPack there
-(+19 vs +5), but that gap is within what one recording can resolve (see
-Caveats). QP 8.0 fails the waveform criterion. The practical lesson for this
-modality is to choose the quantizer by its effect on spike detection, not by
-CR, which again supports Comment 4.
+Through QP 3.0 (CR 6.0), T.261 kept unit recovery within two units of
+lossless and passed the waveform criterion comfortably. QP 5.0 (CR 8.6)
+passes on the 100 s excerpt but fails over the full 600 s (p90 0.120 on
+peak-to-valley at 60 µm). If the 600 s figure holds, T.261 has no setting in
+our sweep that both passes the tolerance and compresses more than WavPack's
+best passing setting (CR 7.1).
+
+We do not draw conclusions from the false-positive difference against
+WavPack. At QP 5.0 it is +19 vs +5, but that gap is within what one
+recording can resolve. In addition, removing the encoder defect described
+in Comment 7 raised the T.261 count from 145 to 167 at the same QP.
+QP 8.0 fails the waveform criterion outright.
+
+The practical lesson for this modality is to choose the quantizer by its
+effect on spike detection, not by CR, which again supports Comment 4.
 
 **Proposed solution.** No normative change. Optionally, add to the Note
 that the suitability of a given lossy setting depends on the downstream
@@ -249,24 +286,69 @@ analysis and should be established per modality.
 
 **Comment.** Some acquisition software rescales samples to a fixed physical
 unit before storing them. Open Ephys, for example, rescales to
-0.195 µV/bit, so Neuropixels 1.0 data are stored as exact multiples of 12
-(Buccino et al. 2023, §2.2.1). The low log2(12) ≈ 3.6 bits then carry no
-information, and neither T.261 nor WavPack exploited this in our tests. On
-the same two recordings, lossless T.261 reached CR 2.01 / 2.08 as stored,
-and 3.53 / 3.65 once each channel was re-expressed with an LSB of 1
-(median removed, then divided by 12): ~75 % better. No existing attribute
-can signal that samples lie on a coarser grid than their bit depth
-implies.
+0.195 µV/bit, so Neuropixels 1.0 samples land on a lattice of multiples of
+12 (Buccino et al. 2023, §2.2.1). In the recordings we measured, 86 % of
+samples lie exactly on the lattice and 99.96 % within ±1, so the low
+~3.6 bits carry almost no information.
+
+Neither T.261 nor WavPack exploits this. T.261's zero-LSB tool
+(`cgps_allow_zero_lsb_flag`) made no difference to CR on these recordings,
+presumably because 12 is not a power of two and the lattice is jittered.
+On the same two recordings, lossless T.261 reached CR 2.01 / 2.08 as
+stored, and 3.53 / 3.65 once each channel was re-expressed with an LSB of 1
+(median removed, divided by 12, rounded): ~75 % better. That correction
+discards the ±1 jitter, an RMS change of 0.33 % of the signal's standard
+deviation, so strictly it is a (tiny) lossy step.
+
+No existing attribute can signal that samples lie on a coarser grid than
+their bit depth implies.
 
 **Proposed solution.** Add an informative note recommending that producers
-store sample values in native ADC counts (LSB = 1). The physical scaling
+store sample values in native ADC counts (LSB = 1), rather than rescaled
+to a fixed physical unit. The physical scaling
 belongs in Channel Sensitivity (003A,0210) and Channel Sensitivity
 Correction Factor (003A,0212), which already exist for this purpose. We
 also suggest to ITU-T that a future T.261 revision detect and signal a
 common integer scale factor per channel, in the spirit of FLAC's "wasted
 bits" but not limited to powers of two.
 
-### Comment 7 (technical): stream sizes exceed 32-bit offsets within minutes
+### Comment 7 (technical): maturity of the reference software
+
+**Where:** Closed Issue #2 (p. 7).
+
+**Comment.** Closed Issue #2 offers the reference software as something that
+"can be tested and re-used in commercial implementations". Working with it
+on microelectrode data, we found issues that implementers reusing it would
+inherit:
+
+* **Error bursts at the end of every encoded segment.** When a segment's
+  length is not a multiple of the block size, the encoder extends the last
+  block by repeating the final sample. This creates a step that the
+  transform spreads back onto the real samples. With 1 s segments at
+  30 kHz and 1024-sample blocks, that final block carried 2.46x the RMS
+  error of the rest, peaking at 3.6x the quantizer step, on 54 % of
+  channels. A 600 s recording thus holds ~600 such bursts. Mirror
+  extension, or choosing segment lengths that are multiples of the block
+  size, removes the effect.
+* **A per-channel encoder control acts globally.** With independent
+  channel groups, `ChannelDistortionScaleFactor` looks up the per-channel
+  weight by the channel's index within its group. That index is always 0,
+  so every channel receives channel 0's weight.
+* **Presets.** `combinedPresetEMG_IndepChannel.cfg` is byte-identical to
+  the EEG preset. Several configuration keys in the shipped presets have
+  no effect in the configurations that set them.
+
+None of these are bitstream issues, and all are fixable in the encoder.
+But the first one is what implementers would get by default, and it makes
+the lossy error non-uniform in time. That is a further reason to carry a
+maximum-error indicator (Comment 4).
+
+**Proposed solution.** No change to the Supplement text. We ask WG-32 to
+forward these to the reference-software maintainers, and to add an
+informative note that encoders should avoid replicate-padding a final
+partial block. We can provide the measurements and reproducing scripts.
+
+### Comment 8 (technical): stream sizes exceed 32-bit offsets within minutes
 
 **Where:** A.X, lines 528–535 (Basic Offset Table); Closed Issue #15
 (p. 8); Closed Issue #18 (p. 9); Open Issue #22 (p. 6).
@@ -301,7 +383,7 @@ Comments 1 and 2 more pressing.
   time range of a waveform, analogous to frame retrieval, would be widely
   used for this data.
 
-### Comment 8 (general): rationale for excluding other codecs should be scoped to the modalities evaluated
+### Comment 9 (general): rationale for excluding other codecs should be scoped to the modalities evaluated
 
 **Where:** Closed Issue #1 (p. 7); Closed Issue #17 (p. 9).
 
@@ -322,7 +404,7 @@ the FLAC rationale in Closed Issue #17 accordingly. We do not propose
 adding either codec to this Supplement. We only ask that the record not
 imply evidence that does not extend to all waveform modalities.
 
-### Comment 9 (general): patent status
+### Comment 10 (general): patent status
 
 **Where:** Open Issue #3 (p. 6).
 
@@ -336,7 +418,7 @@ freely redistributed.
 from the T.261 contributors (or confirmation that none are required), and
 record the outcome in the Supplement.
 
-### Comment 10 (editorial)
+### Comment 11 (editorial)
 
 **Where and proposed correction:**
 
@@ -356,8 +438,11 @@ All numbers above come from an open, reproducible benchmark:
   walls") and `.specify/specs/results-2026-08-19-CSHZAD026.md`.
 * Study: [dandi/compression-comparisons-t261-study](https://github.com/dandi/compression-comparisons-t261-study),
   a DataLad dataset with a `datalad run` record for every condition. Reports
-  are in `derivatives/reports-2026-08-29/`; per-condition metrics are in
-  `derivatives/compbench-2026-08-25-t261-vs-paper-codecs/`.
+  are in `derivatives/reports-2026-08-29/` and, for the full reproduction,
+  `derivatives/reports-2026-09-23/full-matrix.md`. Per-condition T.261
+  metrics are in `derivatives/compbench-2026-08-25-t261-vs-paper-codecs/`.
+* Encoder analyses (segment-end defect, preset search, lattice audit) are in
+  the tool repository's `.specify/specs/t261-profile-design-plan.md`.
 
 **Data.**
 
@@ -376,6 +461,8 @@ stock EEG presets:
 * Lossy: `combinedPresetEEG_IndepChannel` with `StepSizeForQP` ∈
   {1.5, 2, 3, 5, 8}.
 * Joint-channel: `combinedPresetEEG_lossless`, which timed out.
+* WavPack: `wavpack-numcodecs` 0.2.3. Its hybrid mode differs from the
+  0.1.3 used by Buccino et al. by up to 7.8 % in CR at a given bitrate.
 
 **Lossless compression (median CR over the six inputs).**
 
@@ -390,17 +477,24 @@ stock EEG presets:
 
 ## Caveats
 
-* **Sorting and waveform results rest on one simulated recording.**
-  Differences smaller than ~17 false-positive units at matched CR cannot be
-  resolved from it. Sorting on real recordings is not yet done.
+* **Sorting and waveform results rest on one simulated recording, one run
+  per setting.** Differences smaller than ~17 false-positive units at
+  matched CR cannot be resolved from it. Sorting on real recordings is not
+  yet done.
+* **All T.261 results include the segment-end defect of Comment 7.**
+  Removing it changes CR by −0.1 %; its effect on the sorting results is
+  described in Comment 5.
+* **The 600 s waveform verdict for QP 5.0 is not yet reconciled with the
+  100 s one.**
 * **Throughput figures are wall-clock and untuned.** T.261 ran as a
   subprocess round-tripping through files, single-threaded, on a host
   shared with other benchmark jobs. The general-purpose codecs ran at high
   levels (`zstd` 22, `lzma` 9), which is why they are slow too. An
   in-process build would be faster, but we do not expect it to close a
   12–70x gap to WavPack.
-* **Joint-channel coding was tried once:** a single 10 s excerpt of one
-  recording, at 384 channels, with a 30-minute timeout. We did not
+* **Joint-channel coding was tried on a single 10 s excerpt of one
+  recording**, at 384 channels, and timed out at 30 minutes both times.
+  We did not
   characterise how its cost scales with channel count, so it may be
   practical for EEG-sized montages.
 * **We used the reference encoder's stock EEG presets.** Presets tuned for
