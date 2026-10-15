@@ -9,8 +9,8 @@
     }
   },
   "compbench_version": "0.0.1.dev0",
-  "created_utc": "2026-08-22T14:16:23+00:00",
-  "git_sha": "697f751b1c35389271d0f9b9d5ba191fe671f6b5",
+  "created_utc": "2026-10-15T21:16:33+00:00",
+  "git_sha": "58d0fd38c6e2c62d456dfb3fb6b2f13485b912f9",
   "input": {
     "dtype": "int16",
     "duration_s": 0.5,
@@ -41,6 +41,6 @@
   },
   "python": {
     "impl": "CPython",
-    "version": "3.13.15"
+    "version": "3.13.5"
   }
 }
